@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:app_1/AppBar/bottomappbar.dart';
 
 import '../../Login/loginpage.dart';
+
 class Info extends StatefulWidget {
   const Info({super.key});
 
@@ -32,7 +33,8 @@ class _InfoState extends State<Info> {
                     context,
                     MaterialPageRoute(
                       builder: (context) => Login(),
-                    ),);
+                    ),
+                  );
                 },
                 child: const Text('네'),
               ),
@@ -46,6 +48,7 @@ class _InfoState extends State<Info> {
           );
         });
   }
+
   @override
   Widget build(BuildContext context) {
     return WillPopScope(
@@ -54,40 +57,49 @@ class _InfoState extends State<Info> {
       },
       child: SafeArea(
         child: Scaffold(
-          appBar: TopAppbar,
-          body: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Container(
-                width: MediaQuery.of(context).size.width,
-                height: 300,
-                margin: EdgeInsets.only(bottom: 20),
-                decoration: BoxDecoration(color: Color.fromARGB(
-                    100, 238, 238, 255)),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Image.asset('assets/person.jpg',scale: 3,),
-                    Padding(padding: EdgeInsets.only(right: 15)),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(user.User_Nic,style: TextStyle(fontSize: 20),),
-                        Text(user.User_Local,style: TextStyle(color: Colors.grey,fontSize: 10),),
-                        Text(user.User_Hobby)
-                      ],
-                    )
-                  ],
+            appBar: TopAppbar,
+            body: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Container(
+                  width: MediaQuery.of(context).size.width,
+                  height: 300,
+                  margin: EdgeInsets.only(bottom: 20),
+                  decoration:
+                      BoxDecoration(color: Color.fromARGB(100, 238, 238, 255)),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset(
+                        'assets/person.jpg',
+                        scale: 3,
+                      ),
+                      Padding(padding: EdgeInsets.only(right: 15)),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            user.User_Nic,
+                            style: TextStyle(fontSize: 20),
+                          ),
+                          Text(
+                            user.User_Local,
+                            style: TextStyle(color: Colors.grey, fontSize: 10),
+                          ),
+                          Text(user.User_Hobby)
+                        ],
+                      )
+                    ],
+                  ),
                 ),
-              ),
-              ElevatedButton(onPressed: (){
-                _checkLogout(context);
-              }, child: Text('로그아웃'))
-            ],
-          ),
-            bottomNavigationBar: BtmAppBar
-
-        ),
+                ElevatedButton(
+                    onPressed: () {
+                      _checkLogout(context);
+                    },
+                    child: Text('로그아웃'))
+              ],
+            ),
+            bottomNavigationBar: BtmAppBar),
       ),
     );
   }

@@ -4,11 +4,13 @@ import 'package:app_1/Page/Info/myinfopage.dart';
 import 'package:app_1/AppBar/appbar.dart';
 import 'package:app_1/Page/Util/writepage.dart';
 import 'package:app_1/Global/global.dart';
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:app_1/AppBar/bottomappbar.dart';
 import 'package:app_1/Page/Util/viewtextpage.dart';
+
 class Home extends StatefulWidget {
-  const Home({super.key});
+  const Home({Key? key});
 
   @override
   State<Home> createState() => _HomeState();
@@ -16,87 +18,129 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   @override
+  void initState() {
+    super.initState();
+    futureDataList = getPost();
+    print(futureDataList);
+  }
+
+  Future<List<Map<String, dynamic>>> getPost() async {
+    try {
+      Response response = await dio.post("$baseUrl/list");
+
+      if (response.statusCode == 200) {
+        return List<Map<String, dynamic>>.from(response.data);
+      } else {
+        print('데이터 가져오기 실패');
+        throw Exception('데이터 가져오기 실패');
+      }
+    } catch (e) {
+      print('에러: $e');
+      throw Exception('에러: $e');
+    }
+  }
+
+  @override
   Widget build(BuildContext context) {
     initNavigatorContext(context);
     setNavigatorContext(context);
     return WillPopScope(
-        onWillPop: () async {
-          return false;
-        },
-        child: SafeArea(
-          child: Scaffold(
-              appBar: TopAppbar,
-              body: SingleChildScrollView(
-                child: Column(
-                  children: [
-                    SizedBox(
-                      width: MediaQuery.of(context).size.width,
-                      child: Align(
+      onWillPop: () async {
+        return false;
+      },
+      child: SafeArea(
+        child: Scaffold(
+          appBar: TopAppbar,
+          body: FutureBuilder(
+            future: futureDataList,
+            builder: (context, snapshot) {
+              if (snapshot.connectionState == ConnectionState.waiting) {
+                return Center(child: CircularProgressIndicator());
+              } else if (snapshot.hasError) {
+                return Center(child: Text('에러: ${snapshot.error}'));
+              } else {
+                dataList =
+                snapshot.data as List<Map<String, dynamic>>;
+                return SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      SizedBox(
+                        width: MediaQuery.of(context).size.width,
+                        child: Align(
                           child: TextButton(
-                              onPressed: () {
-                                Navigator.of(navigatorContext)
-                                    .push(PageRouteBuilder(
+                            onPressed: () {
+                              Navigator.of(navigatorContext).push(
+                                PageRouteBuilder(
                                   pageBuilder:
                                       (context, animation, secondaryAnimation) =>
-                                          Write(),
+                                      Write(),
                                   transitionDuration: Duration.zero,
                                   reverseTransitionDuration: Duration.zero,
-                                ));
-                              },
-                              child: Text(
-                                '글쓰기',
-                                style: TextStyle(fontSize: 20),
-                              )),
-                          alignment: Alignment.centerRight),
-                    ),
-                    Container(
-                      width: MediaQuery.of(navigatorContext).size.width,
-                      height: MediaQuery.of(navigatorContext).size.height * 0.72,
-                      child: ListView.builder(
-                        itemCount: posts.length,
-                        itemBuilder: (context, index) {
-                          final post = posts[index];
-                          return ListTile(
-                            contentPadding: EdgeInsets.only(left: 20, bottom: 20),
-                            title: Align(
-                              child: Text(
-                                post.title,
-                                style: TextStyle(fontSize: 20),
-                              ),
-                              alignment: Alignment.center,
-                            ),
-                            subtitle: Column(
-                              children: [
-                                Row(
-                                  children: [
-                                    Column(
-                                      children: [
-                                        Text(post.author),
-                                        Text(post.date),
-                                      ],
-                                    ),
-                                    Padding(padding: EdgeInsets.only(right: 20)),
-                                    Text(post.summary),
-                                  ],
-                                ),
-                              ],
-                            ),
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => Viewtext(index: index),
                                 ),
                               );
                             },
-                          );
-                        },
+                            child: Text(
+                              '글쓰기',
+                              style: TextStyle(fontSize: 20),
+                            ),
+                          ),
+                          alignment: Alignment.centerRight,
+                        ),
                       ),
-                    )
-                  ],
-                ),
-              ),
-              bottomNavigationBar: BtmAppBar),
-        ));
+                      Container(
+                        width: MediaQuery.of(navigatorContext).size.width,
+                        height: MediaQuery.of(navigatorContext).size.height * 0.72,
+                        child: ListView.builder(
+                          itemCount: dataList.length,
+                          itemBuilder: (context, index) {
+                            final post = dataList[index];
+                            return ListTile(
+                              contentPadding:
+                              EdgeInsets.only(left: 20, bottom: 20),
+                              title: Align(
+                                child: Text(
+                                  post['title'],
+                                  style: TextStyle(fontSize: 20),
+                                ),
+                                alignment: Alignment.center,
+                              ),
+                              subtitle: Column(
+                                children: [
+                                  Row(
+                                    children: [
+                                      Column(
+                                        children: [
+                                          Text(post['nickname']),
+                                          Text(post['upload_time'].substring(0, 10)),
+                                        ],
+                                      ),
+                                      Padding(padding: EdgeInsets.only(right: 20)),
+                                      Text(post['content'].substring(0, 10) + '...'),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => Viewtext(index: index),
+                                  ),
+                                );
+                              },
+                            );
+                          },
+                        ),
+                      ),
+                    ],
+                  ),
+                );
+              }
+            },
+          ),
+          bottomNavigationBar: BtmAppBar,
+        ),
+      ),
+    );
   }
 }

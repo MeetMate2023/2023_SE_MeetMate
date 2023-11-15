@@ -63,30 +63,10 @@ class User{
   }
 
 }
-
-class Post {
-  final String title;
-  final String content;
-  final String category;
-  final String author;
-  final  String date;
-  final String summary;
-  final String location;
-  Post({required this.title, required this.content, required this.author,required this.date,required this.summary,required this.category,required this.location});
-}
-final List<Post> posts = [
-  Post(summary: '같이 볼링할사람 구합니다',title: '볼링 주말 초보모임',
-      content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-      author: 'aaa',
-      date:(DateTime.now().year.toString()+'-'+DateTime.now().month.toString()+'-'+DateTime.now().day.toString()),
-      category: '볼링',
-      location: '월성동',
-  ),
-
-];
-
+late Future<List<Map<String, dynamic>>> futureDataList;
+late List<Map<String, dynamic>> dataList;
 late BuildContext navigatorContext;
-
+late List<Map<String, dynamic>> reviewList;
 User user = User();
 
 

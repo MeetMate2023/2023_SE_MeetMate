@@ -1,6 +1,7 @@
 import 'package:app_1/Login/registration.dart';
 import 'package:app_1/Page/Home/homepage.dart';
 import 'package:app_1/Global/global.dart';
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 
 class Login extends StatefulWidget {

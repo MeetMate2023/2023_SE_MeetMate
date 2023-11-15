@@ -90,3 +90,7 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+rules:
+  prefer_const_constructors: false
+  prefer_const_literals_to_create_immutables: false
+  prefer_const_constructors_in_immutables: false

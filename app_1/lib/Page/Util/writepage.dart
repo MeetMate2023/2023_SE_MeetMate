@@ -129,6 +129,7 @@ class _WriteState extends State<Write> {
             })
         .catchError((error) => {
               print(error),
+              print("에러"),
             });
   }
 

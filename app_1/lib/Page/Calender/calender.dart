@@ -4,13 +4,14 @@ import 'package:table_calendar/table_calendar.dart';
 
 class Event {
   String text = '';
-  String eventday ='';
+  String eventday = '';
 
   Event(this.text, this.eventday);
 }
 
 class Calender extends StatefulWidget {
   const Calender({Key? key}) : super(key: key);
+
   @override
   State<Calender> createState() => _CalenderState();
 }
@@ -70,7 +71,7 @@ class _CalenderState extends State<Calender> {
             ),
             SizedBox(
               width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height*0.4,
+              height: MediaQuery.of(context).size.height * 0.4,
               child: DataTable(
                 columns: [
                   DataColumn(label: Text('시간')),
