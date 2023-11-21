@@ -1,6 +1,7 @@
 package member.Member.service;
 
 
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import member.Member.controller.dto.JoinRequest;
 import member.Member.repository.MemberRepository;
@@ -13,36 +14,37 @@ public class MemberServiceImpl implements MemberService {
 
     private final MemberRepository memberRepository;
 
-    @Override
     public boolean join(JoinRequest joinRequest) {
         Member member = Member.builder()
-                .id(joinRequest.getId())
+                .uid(joinRequest.getUid())
                 .password(joinRequest.getPassword())
                 .name(joinRequest.getName())
+                .company_check(joinRequest.isCompany_check())
                 .nickname(joinRequest.getNickname())
                 .local(joinRequest.getLocal())
                 .hobby(joinRequest.getHobby())
                 .build();
-        // TODO: save() 메서드에서 반환하는 값 체크해서 리턴 값 수정
         memberRepository.save(member);
         return true;
-
     }
 
-    public boolean login(JoinRequest joinRequest) {
+    public Member login(JoinRequest joinRequest) {
         Member member = Member.builder()
-                .id(joinRequest.getId())
+                .uid(joinRequest.getUid())
                 .password(joinRequest.getPassword())
                 .build();
 
-        Member foundMember = memberRepository.getMemberById(member.getId());
-
-        return foundMember != null && foundMember.getPassword().equals(member.getPassword());
+        Member foundMember = memberRepository.getMemberByUid(member.getUid());
+        if(foundMember != null && foundMember.getPassword().equals(member.getPassword())){
+            return foundMember;
+        }
+        else
+            return null;
     }
 
     public boolean id_check(JoinRequest joinRequest) {
-        String idToCheck = joinRequest.getId();
-        return memberRepository.getMemberById(idToCheck) != null;
+        String idToCheck = joinRequest.getUid();
+        return memberRepository.getMemberByUid(idToCheck) != null;
     }
 
     public boolean nickname_check(JoinRequest joinRequest) {
@@ -50,6 +52,9 @@ public class MemberServiceImpl implements MemberService {
         return memberRepository.getMemberByNickname(nicknameToCheck) != null;
     }
 
-
-
+    @Transactional
+    public boolean delete(JoinRequest joinRequest){
+        int deletedRecords = memberRepository.deleteByUid(joinRequest.getUid());
+        return deletedRecords > 0;
+    }
 }

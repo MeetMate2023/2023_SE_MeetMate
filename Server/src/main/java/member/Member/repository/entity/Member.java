@@ -15,9 +15,10 @@ public class Member {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long index;
+    private Long id;
 
-    private String id;
+    private boolean company_check; // 1이면 기업, 0이면 유저
+    private String uid;
     private String password;
     private String name;
     private String nickname;
