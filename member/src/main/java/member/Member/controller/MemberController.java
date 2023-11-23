@@ -5,9 +5,12 @@ import member.Member.controller.dto.JoinRequest;
 import member.Member.repository.entity.Member;
 import member.Member.service.MemberService;
 import org.hibernate.mapping.Join;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
@@ -39,9 +42,15 @@ public class MemberController {
     public boolean delete(@RequestBody JoinRequest joinRequest){
         return memberService.delete(joinRequest);
     }
+    //유저 내용 업데이트
     @PostMapping("/member/update")
     public boolean update(){
-        return false;
+        return true;
     }
-    //상대방 프로필 출력
+    //user nickname 모두 출력
+    @GetMapping("/member/admin")
+    public List<String> all_user_list(){
+        System.out.println("member admin 실행 시작");
+        return memberService.all_user_list();
+    }
 }

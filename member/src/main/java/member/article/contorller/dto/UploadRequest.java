@@ -12,4 +12,5 @@ public class UploadRequest {
     String category;
     String location;
     String chat;
+    String meetTime;
 }

@@ -6,6 +6,7 @@ import member.article.repository.entity.Article;
 import java.util.List;
 
 public interface ArticleService {
+
     boolean upload(UploadRequest uploadRequest);
     List<Article> getArticleList();
 

@@ -1,13 +1,14 @@
 package member.Member.repository.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
+import org.springframework.data.jpa.repository.Temporal;
+
+import java.time.LocalDateTime;
 
 @Entity
 @Builder
+@Setter
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
@@ -24,5 +25,9 @@ public class Member {
     private String nickname;
     private String local;
     private String hobby;
+    private int dailyPostCount;
 
+    private LocalDateTime joinday;
+
+    private LocalDateTime lastPostDate;
 }

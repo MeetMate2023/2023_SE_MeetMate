@@ -3,6 +3,8 @@ package member.Member.service;
 import member.Member.controller.dto.JoinRequest;
 import member.Member.repository.entity.Member;
 
+import java.util.List;
+
 public interface MemberService {
     boolean join(JoinRequest joinRequest);
     Member login(JoinRequest joinRequest);
@@ -11,4 +13,5 @@ public interface MemberService {
     boolean nickname_check(JoinRequest joinRequest);
 
     boolean delete(JoinRequest joinRequest);
+    List<String>all_user_list();
 }

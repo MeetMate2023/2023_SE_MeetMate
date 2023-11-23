@@ -11,11 +11,7 @@ import member.comment.repository.entity.Comment;
 import member.comment.repository.entity.CommentDTO;
 import org.springframework.stereotype.Service;
 
-import java.sql.SQLOutput;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 @Service
 @RequiredArgsConstructor
@@ -25,7 +21,8 @@ public class CommentServiceImpl implements CommentService {
     private final MemberRepository memberRepository;
     public boolean write(WriteRequest writeRequest) {
         Article article = articleRepository.findById(writeRequest.getArticleId()).orElse(null);
-        Member member = memberRepository.findByNickname(writeRequest.getNickname()).orElse(null);
+        Member member = memberRepository.findByNickname(writeRequest.getNickname());
+
         if (article == null){
             System.out.println("Article을 찾을 수 없음: " + writeRequest.getArticleId());
             return false;
@@ -49,7 +46,6 @@ public class CommentServiceImpl implements CommentService {
 
     public List<CommentDTO> getCommentList(WriteRequest writeRequest) {
         Long articleId = writeRequest.getArticleId();
-        System.out.println("article id : " + writeRequest.getArticleId());
         List<Comment> commentList = commentRepository.findByArticleId(articleId);
         List<CommentDTO> commentDTOList = new ArrayList<>();
 
@@ -59,7 +55,6 @@ public class CommentServiceImpl implements CommentService {
             Long commentId = comment.getId();
             CommentDTO commentDTO = new CommentDTO(content, nickname,commentId);
             commentDTOList.add(commentDTO);
-            System.out.println("Comment: " + content + " by " + nickname);
         }
 
         return commentDTOList;

@@ -23,7 +23,9 @@ public class Article {
     private String nickname;
     private String category;
     private String location;
+    private String meetTime;
     private LocalDateTime upload_time;
+
     private String chat;
 
 

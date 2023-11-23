@@ -1,6 +1,8 @@
 package member.article.service;
 
 import lombok.RequiredArgsConstructor;
+import member.Member.repository.MemberRepository;
+import member.Member.repository.entity.Member;
 import member.article.contorller.dto.UploadRequest;
 import member.article.repository.ArticleRepository;
 import member.article.repository.entity.Article;
@@ -14,6 +16,7 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class ArticleServiceImpl implements ArticleService{
     private final ArticleRepository articleRepository;
+    private final MemberRepository memberRepository;
 
     public boolean upload(UploadRequest uploadRequest){
         Article article = Article.builder()
@@ -24,8 +27,15 @@ public class ArticleServiceImpl implements ArticleService{
                 .upload_time(LocalDateTime.now())
                 .nickname(uploadRequest.getNickname())
                 .chat(uploadRequest.getChat())
+                .meetTime(uploadRequest.getMeetTime())
                 .build();
+
         articleRepository.save(article);
+
+        Member member = memberRepository.findByNickname(uploadRequest.getNickname());
+        member.setDailyPostCount(member.getDailyPostCount() + 1);
+        member.setLastPostDate(LocalDateTime.now());
+        memberRepository.save(member);
         return true;
     }
     public List<Article> getArticleList() {
@@ -40,7 +50,7 @@ public class ArticleServiceImpl implements ArticleService{
         String nCategory = uploadRequest.getCategory();
         String nLocation = uploadRequest.getLocation();
         String chat = uploadRequest.getChat();
-
+        String meetTime = uploadRequest.getMeetTime();
         Optional<Article> existingArticleOptional = articleRepository.findById(id);
 
         if (existingArticleOptional.isPresent()) {
@@ -50,6 +60,7 @@ public class ArticleServiceImpl implements ArticleService{
             existingArticle.setContent(nContent);
             existingArticle.setLocation(nLocation);
             existingArticle.setChat(chat);
+            existingArticle.setMeetTime(meetTime);
             // 수정된 게시글을 저장
             articleRepository.save(existingArticle);
             return true;
