@@ -17,17 +17,18 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  ScrollController _scrollController = ScrollController();
+
   @override
   void initState() {
     super.initState();
     futureDataList = getPost();
-    print(futureDataList);
+    _scrollController = ScrollController();
   }
 
   Future<List<Map<String, dynamic>>> getPost() async {
     try {
-      Response response = await dio.post("$baseUrl/list");
-
+      Response response = await dio.post("$baseUrl/article/list");
       if (response.statusCode == 200) {
         return List<Map<String, dynamic>>.from(response.data);
       } else {
@@ -59,80 +60,126 @@ class _HomeState extends State<Home> {
               } else if (snapshot.hasError) {
                 return Center(child: Text('에러: ${snapshot.error}'));
               } else {
-                dataList =
-                snapshot.data as List<Map<String, dynamic>>;
-                return SingleChildScrollView(
-                  child: Column(
-                    children: [
-                      SizedBox(
-                        width: MediaQuery.of(context).size.width,
-                        child: Align(
-                          child: TextButton(
-                            onPressed: () {
-                              Navigator.of(navigatorContext).push(
-                                PageRouteBuilder(
-                                  pageBuilder:
-                                      (context, animation, secondaryAnimation) =>
-                                      Write(),
-                                  transitionDuration: Duration.zero,
-                                  reverseTransitionDuration: Duration.zero,
-                                ),
-                              );
-                            },
-                            child: Text(
-                              '글쓰기',
-                              style: TextStyle(fontSize: 20),
-                            ),
-                          ),
-                          alignment: Alignment.centerRight,
-                        ),
-                      ),
-                      Container(
-                        width: MediaQuery.of(navigatorContext).size.width,
-                        height: MediaQuery.of(navigatorContext).size.height * 0.72,
-                        child: ListView.builder(
-                          itemCount: dataList.length,
-                          itemBuilder: (context, index) {
-                            final post = dataList[index];
-                            return ListTile(
-                              contentPadding:
-                              EdgeInsets.only(left: 20, bottom: 20),
-                              title: Align(
+                dataList = snapshot.data as List<Map<String, dynamic>>;
+                return RefreshIndicator(
+                  onRefresh: () async {
+                    setState(() async {
+                      await refresh();
+                    });
+                  },
+                  child: SingleChildScrollView(
+                    controller: _scrollController,
+                    child: SizedBox(
+                      child: Column(
+                        children: [
+                          SizedBox(
+                            width: MediaQuery.of(context).size.width,
+                            child: Align(
+                              child: TextButton(
+                                onPressed: () {
+                                  final options = {
+                                    "nickname": user.User_Nic,
+                                  };
+                                  dio.post('$baseUrl/article/post',data: options).then((value) {
+                                    if (value.data) {
+                                      Navigator.of(navigatorContext).push(
+                                        PageRouteBuilder(
+                                          pageBuilder: (context, animation,
+                                                  secondaryAnimation) =>
+                                              Write(),
+                                          transitionDuration: Duration.zero,
+                                          reverseTransitionDuration:
+                                              Duration.zero,
+                                        ),
+                                      );
+                                    }else{
+                                      showDialog(
+                                          context: context,
+                                          barrierDismissible: false,
+                                          builder: (BuildContext ctx) {
+                                            return AlertDialog(
+                                              title: Text('실패'),
+                                              content: Text('하루에 3or1개만 가능합니다'),
+                                              actions: [
+                                                TextButton(
+                                                  onPressed: () {
+                                                    Navigator.push(context, MaterialPageRoute(builder: (context) {
+                                                      return Home();
+                                                    }));
+                                                  },
+                                                  child: const Text('확인'),
+                                                ),
+                                              ],
+                                            );
+                                          });
+                                    }
+                                  });
+                                },
                                 child: Text(
-                                  post['title'],
+                                  '글쓰기',
                                   style: TextStyle(fontSize: 20),
                                 ),
-                                alignment: Alignment.center,
                               ),
-                              subtitle: Column(
-                                children: [
-                                  Row(
+                              alignment: Alignment.centerRight,
+                            ),
+                          ),
+                          Container(
+                            width: MediaQuery.of(navigatorContext).size.width,
+                            height:
+                                MediaQuery.of(navigatorContext).size.height *
+                                    0.72,
+                            child: ListView.builder(
+                              physics: AlwaysScrollableScrollPhysics(),
+                              itemCount: dataList.length,
+                              itemBuilder: (context, index) {
+                                final post = dataList[index];
+                                return ListTile(
+                                  contentPadding:
+                                      EdgeInsets.only(left: 20, bottom: 20),
+                                  title: Align(
+                                    child: Text(
+                                      post['title'],
+                                      style: TextStyle(fontSize: 20),
+                                    ),
+                                    alignment: Alignment.center,
+                                  ),
+                                  subtitle: Column(
                                     children: [
-                                      Column(
+                                      Row(
                                         children: [
-                                          Text(post['nickname']),
-                                          Text(post['upload_time'].substring(0, 10)),
+                                          Column(
+                                            children: [
+                                              Text(post['nickname']),
+                                              Text(post['upload_time']
+                                                  .substring(0, 10)),
+                                            ],
+                                          ),
+                                          Padding(
+                                              padding:
+                                                  EdgeInsets.only(right: 20)),
+                                          Text(
+                                              post['content'].substring(0, 10) +
+                                                  '...'),
                                         ],
                                       ),
-                                      Padding(padding: EdgeInsets.only(right: 20)),
-                                      Text(post['content'].substring(0, 10) + '...'),
                                     ],
                                   ),
-                                ],
-                              ),
-                              onTap: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => Viewtext(index: index),
-                                  ),
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) =>
+                                            Viewtext(index: index),
+                                      ),
+                                    );
+                                  },
                                 );
                               },
-                            );
-                          },
-                        ),
+                            ),
+                          ),
+                        ],
                       ),
-                    ],
+                    ),
                   ),
                 );
               }

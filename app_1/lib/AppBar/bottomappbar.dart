@@ -30,7 +30,7 @@ import '../Page/Category/category.dart';
               Text('홈',style: TextStyle(fontSize: 7),)
             ],
           )),
-        ),
+        ), // 홈 버튼
         Expanded(
           child: ElevatedButton(onPressed: (){
             Navigator.of(navigatorContext)
@@ -45,7 +45,7 @@ import '../Page/Category/category.dart';
               Text('카테고리',style: TextStyle(fontSize: 7))
             ],
           )),
-        ),
+        ), // 카테고리 버튼
         Expanded(
           child: ElevatedButton(
               onPressed: (){
@@ -60,7 +60,7 @@ import '../Page/Category/category.dart';
               Text('주변취미',style: TextStyle(fontSize: 7))
             ],
           )),
-        ),
+        ), // 주변취미 버튼
         Expanded(
           child: ElevatedButton(onPressed: (){
             _CurrentContext = 'Info';
@@ -75,7 +75,7 @@ import '../Page/Category/category.dart';
               Text('일정',style: TextStyle(fontSize: 7))
             ],
           )),
-        ),
+        ), // 캘린더 버튼
         Expanded(
           child: ElevatedButton(onPressed: (){
             _CurrentContext = 'Info';
@@ -90,7 +90,7 @@ import '../Page/Category/category.dart';
               Text('내 정보',style: TextStyle(fontSize: 7))
             ],
           )),
-        ),
+        ), // 내정보 버튼
       ],),
  );
 

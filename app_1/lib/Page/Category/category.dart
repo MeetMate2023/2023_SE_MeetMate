@@ -24,7 +24,7 @@ class _CategoryState extends State<Category> {
 
   Future<List<Map<String, dynamic>>> getPost() async {
     try {
-      Response response = await dio.post("$baseUrl/list");
+      Response response = await dio.post("$baseUrl/article/list");
 
       if (response.statusCode == 200) {
         List<Map<String, dynamic>> allData =

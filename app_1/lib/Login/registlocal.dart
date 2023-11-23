@@ -1,3 +1,4 @@
+// 취미와 동일
 import 'package:app_1/Login/loginpage.dart';
 import 'package:app_1/Global/global.dart';
 import 'package:flutter/material.dart';
@@ -8,9 +9,34 @@ class Local extends StatefulWidget {
   @override
   State<Local> createState() => _LocalState();
 }
-
 class _LocalState extends State<Local> {
   int current_index =0;
+  int index =0;
+  String picked_local = '';
+  int max_select = 3;
+  String iindex ='';
+  void add_local(String h,String i) {
+    if(user.User_type){
+      setState(() {
+        max_select = 1;
+      });
+    } // 업체인지 검사, 업체면 1개
+    setState(() {
+      if (iindex.contains(i)) {
+        picked_local = picked_local.replaceAll(h, '');
+        iindex = iindex.replaceAll(i, '');
+        index--;
+      } else {
+        if(index == max_select){
+          return;
+        }
+        picked_local += h;
+        iindex +=i;
+        index++;
+      }
+
+    });
+  }
   void register() {
     if (user.User_ID.isEmpty ||
         user.User_PassWord.isEmpty ||
@@ -27,7 +53,7 @@ class _LocalState extends State<Local> {
       return;
     }
     final options = {
-      "id": user.User_ID,
+      "uid": user.User_ID,
       "password": user.User_PassWord,
       "name": user.User_Name,
       "nickname": user.User_Nic,
@@ -37,7 +63,7 @@ class _LocalState extends State<Local> {
     };
     print(options);
     dio
-        .post("$baseUrl/join", data: options)
+        .post("$baseUrl/member/join", data: options)
         .then((result) async => {
       print(result),
       Navigator.push(
@@ -55,7 +81,13 @@ class _LocalState extends State<Local> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(title: Text('지역설정'),actions: [
+        appBar: AppBar(title: Row(
+          children: [
+            Text('지역설정'),
+            Padding(padding:  EdgeInsets.only(right: 20)),
+            Text(picked_local,style: TextStyle(color: Colors.grey,fontSize: 10),)
+          ],
+        ),actions: [
           ElevatedButton(onPressed: () {
             register();
           }, child: Text('완료'))
@@ -96,13 +128,19 @@ class _LocalState extends State<Local> {
                 return GestureDetector(
                   onTap: () {
                     setState(() {
-                      user.set_Local(detail_regions[current_index][index]);
+                      add_local(detail_regions[current_index][index]+' ',current_index.toString()+index.toString());
+                      user.set_Local(picked_local);
                     });
                   },
                   child: Container(
                     height: MediaQuery.of(context).size.height*0.1,
                     decoration: BoxDecoration(
-                      border: Border.all(color: Colors.grey),
+                      border: Border.all(color: Color.fromARGB(
+                          100, 96, 96, 96)),
+                      color: iindex.contains(current_index.toString()+index.toString())
+                          ? Color.fromRGBO(255, 242, 126, 1.0)
+                          : null,
+                      // 선택된 항목에 따라 배경 색상 변경
                     ),
                     child: Center(child: Text(detail_regions[current_index][index])),
                   ),

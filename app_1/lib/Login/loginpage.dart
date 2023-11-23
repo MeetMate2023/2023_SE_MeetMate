@@ -32,40 +32,42 @@ class _LoginState extends State<Login> {
             ],
           );
         });
-  }
+  } // 아이디,비밀번호 틀릴시 나오는 경고창
   void login() {
     if (ID.text.isEmpty || Password.text.isEmpty) {
       print(ID.text);
       print(Password.text);
       return;
-    }
+    } // 로그인시 빈 필드가 있나 검사
     final options = {
-      "id": ID.text,
+      "uid": ID.text,
       "password": Password.text,
-    };
+    }; // 필드에 있는 정보 서버로 전송
     print(options);
     dio
-        .post("$baseUrl/login", data: options)
+        .post("$baseUrl/member/login", data: options)
         .then((result) async => {
               print(result),
-              if (result.data["id"].isNotEmpty)
+              if (result.data["uid"].isNotEmpty)
                 {
         setState(() {
+          user.User_ID = result.data["uid"];
+          user.User_PassWord = result.data["password"];
           user.User_Nic = result.data["nickname"];
           user.User_Local = result.data["local"];
           user.User_Name = result.data["name"];
           user.User_Hobby = result.data["hobby"];
           user.User_type = result.data["company_check"];
-        }),
+        }), // 서버에서 아이디,비밀번호 검사후 결과 값으로 사용자의 정보를 반환 -> 반환된 정보를 만들어둔 User객체에 저장
                   Navigator.push(
                     context,
                     MaterialPageRoute(
                       builder: (context) => Home(),
-                    ),
+                    ),// 완료후 Home으로 페이지 전환
                   ),
                }
               else{
-                _showDialog(context)
+                _showDialog(context) // 완료 못하면 경고창
               }
             })
         .catchError((error) => {
@@ -78,7 +80,7 @@ class _LoginState extends State<Login> {
     return WillPopScope(
         onWillPop: () async {
       return false;
-    },
+    }, // 뒤로가기 못하게 막는 함수
       child: SafeArea(
           child: Scaffold(
         appBar: AppBar(
@@ -90,9 +92,9 @@ class _LoginState extends State<Login> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
-                'assets/logo.png',
+                'assets/logo.jpg',
                 scale: 1.5,
-              ),
+              ), // 로고띄우기
               Padding(padding: EdgeInsets.all(30)),
               Align(
                 child: Text(
@@ -106,7 +108,7 @@ class _LoginState extends State<Login> {
                   height: 50,
                   child: TextField(
                     controller: ID,
-                    decoration: InputDecoration(labelText: 'ID'),
+                    decoration: InputDecoration(labelText: 'ID'), // ID입력받는 필드
                   )),
               Padding(padding: EdgeInsets.only(bottom: 2.5)),
               SizedBox(
@@ -114,20 +116,20 @@ class _LoginState extends State<Login> {
                   height: 50,
                   child: TextField(
                     controller: Password,
-                    decoration: InputDecoration(labelText: 'password'),
+                    decoration: InputDecoration(labelText: 'password'), // 비밀번호 입력받는 필드
                   )),
               TextButton(
                   onPressed: () {
                     Navigator.push(context, MaterialPageRoute(builder: (context) {
                       return Registration();
                     }));
-                  },
+                  }, // 회원가입 버튼
                   child: Text('회원가입')),
               ElevatedButton(
                   onPressed: () {
                     login();
                   },
-                  child: Text('로그인')),
+                  child: Text('로그인')), // 로그인 버튼
             ],
           ),
         ),

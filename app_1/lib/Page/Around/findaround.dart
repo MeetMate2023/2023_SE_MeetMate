@@ -27,7 +27,7 @@ class _AroundState extends State<Around> {
 
   Future<List<Map<String, dynamic>>> getPost() async {
     try {
-      Response response = await dio.post("$baseUrl/list");
+      Response response = await dio.post("$baseUrl/article/list");
 
       if (response.statusCode == 200) {
         List<Map<String, dynamic>> allData =
@@ -35,12 +35,11 @@ class _AroundState extends State<Around> {
         List<Map<String, dynamic>> filteredData = [];
         print(user.User_Hobby);
         for (var data in allData) {
-          if (user.User_Local.compareTo(data['category'])==true) {
-            print(data['category']);
+          if (user.User_Local.contains(data['location'])) {
             filteredData.add(data);
           }
         }
-
+          // user가 저장한 위치와 동일한 위치에 대한 글 필터링
         return filteredData;
       } else {
         print('데이터 가져오기 실패');
