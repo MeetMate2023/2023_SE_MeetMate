@@ -8,6 +8,11 @@ import member.Member.repository.MemberRepository;
 import member.Member.repository.entity.Member;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
 @Service
 @RequiredArgsConstructor
 public class MemberServiceImpl implements MemberService {
@@ -23,6 +28,7 @@ public class MemberServiceImpl implements MemberService {
                 .nickname(joinRequest.getNickname())
                 .local(joinRequest.getLocal())
                 .hobby(joinRequest.getHobby())
+                .joinday(LocalDateTime.now())
                 .build();
         memberRepository.save(member);
         return true;
@@ -56,5 +62,19 @@ public class MemberServiceImpl implements MemberService {
     public boolean delete(JoinRequest joinRequest){
         int deletedRecords = memberRepository.deleteByUid(joinRequest.getUid());
         return deletedRecords > 0;
+    }
+
+    //user nickname 전부 출력
+    public List<String> all_user_list(){
+        List<Member> members = memberRepository.findAll();
+        List<String> nicknames = new ArrayList<>();
+
+        for (Member member : members) {
+            nicknames.add(member.getUid());
+        }
+        for(String nickname : nicknames){
+            System.out.println(nickname);
+        }
+        return nicknames;
     }
 }
