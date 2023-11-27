@@ -71,6 +71,7 @@ final AppBar TopAppbar = AppBar(
               dio.post('$baseUrl/invitation/send',data: options).then((value){
                 print(value);
                 invit = value.data;
+
               });
               await Future.delayed(Duration(milliseconds: 500),()=>
                   Navigator.push(navigatorContext, MaterialPageRoute(

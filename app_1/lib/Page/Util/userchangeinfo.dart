@@ -1,8 +1,11 @@
 import 'package:app_1/Global/global.dart';
+import 'package:app_1/Page/Info/myinfopage.dart';
 import 'package:flutter/material.dart';
 
 import '../../Global/hobbylist.dart';
 import '../../Global/koreanlocal.dart';
+import '../../Login/loginpage.dart';
+import '../Home/homepage.dart';
 
 class User_mo extends StatefulWidget {
   const User_mo({super.key});
@@ -12,6 +15,27 @@ class User_mo extends StatefulWidget {
 }
 
 class _User_moState extends State<User_mo> {
+  _successDialog(BuildContext context) {
+    showDialog(
+        context: context,
+        barrierDismissible: false,
+        builder: (BuildContext ctx) {
+          return AlertDialog(
+            title: Text("성공"),
+            content: Text("회원정보를 성공적으로 수정하였습니다\n 업데이트 완료를 위해 앱을 종료했다 켜주세요"),
+            actions: [
+              TextButton(
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return Info();
+                  }));
+                },
+                child: const Text('확인'),
+              ),
+            ],
+          );
+        });
+  }
   String selectedCategory1 = '운동';
   String selectedSubCategory1 = '축구';
   String selectedLocal1 = '서울';
@@ -78,156 +102,46 @@ class _User_moState extends State<User_mo> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(title: Text('회원수정')),
-        body: Center(
-          child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-            Text(user.User_ID),
-            SizedBox(
-                width: 100,
-                child: TextField()),
-            Text(user.User_Nic),
-            Column(
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    SizedBox(
-                      width: MediaQuery.of(context).size.width * 0.33,
-                      child: DropdownButton<String>(
-                        value: selectedCategory1,
-                        onChanged: (String? newValue) {
-                          setState(() {
-                            selectedCategory1 = newValue!;
-                            subCategories1 = getSubCategories(selectedCategory1);
-                            selectedSubCategory1 = subCategories1.isNotEmpty
-                                ? subCategories1[0]
-                                : ''; // 초기값 설정
-                          });
-                        },
-                        items: Hobbys.map((String value) {
-                          return DropdownMenuItem<String>(
-                            value: value,
-                            child: Text(value),
-                          );
-                        }).toList(),
-                      ),
-                    ),
-                    SizedBox(height: 20.0),
-                    DropdownButton<String>(
-                      value: selectedSubCategory1,
-                      onChanged: (String? newValue) {
-                        setState(() {
-                          selectedSubCategory1 = newValue!;
-                        });
-                      },
-                      items: subCategories1.map((String value) {
-                        return DropdownMenuItem<String>(
-                          value: value,
-                          child: Text(value),
-                        );
-                      }).toList(),
-                    ),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    SizedBox(
-                      width: MediaQuery.of(context).size.width * 0.33,
-                      child: DropdownButton<String>(
-                        value: selectedCategory3,
-                        onChanged: (String? newValue) {
-                          setState(() {
-                            selectedCategory3 = newValue!;
-                            subCategories3 = getSubCategories(selectedCategory3);
-                            selectedSubCategory3 = subCategories3.isNotEmpty
-                                ? subCategories3[0]
-                                : ''; // 초기값 설정
-                          });
-                        },
-                        items: Hobbys.map((String value) {
-                          return DropdownMenuItem<String>(
-                            value: value,
-                            child: Text(value),
-                          );
-                        }).toList(),
-                      ),
-                    ),
-                    SizedBox(height: 20.0),
-                    DropdownButton<String>(
-                      value: selectedSubCategory3,
-                      onChanged: (String? newValue) {
-                        setState(() {
-                          selectedSubCategory3 = newValue!;
-                        });
-                      },
-                      items: subCategories3.map((String value) {
-                        return DropdownMenuItem<String>(
-                          value: value,
-                          child: Text(value),
-                        );
-                      }).toList(),
-                    ),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    SizedBox(
-                      width: MediaQuery.of(context).size.width * 0.33,
-                      child: DropdownButton<String>(
-                        value: selectedCategory2,
-                        onChanged: (String? newValue) {
-                          setState(() {
-                            selectedCategory2 = newValue!;
-                            subCategories2 = getSubCategories(selectedCategory2);
-                            selectedSubCategory2 = subCategories2.isNotEmpty
-                                ? subCategories2[0]
-                                : ''; // 초기값 설정
-                          });
-                        },
-                        items: Hobbys.map((String value) {
-                          return DropdownMenuItem<String>(
-                            value: value,
-                            child: Text(value),
-                          );
-                        }).toList(),
-                      ),
-                    ),
-                    SizedBox(height: 20.0),
-                    DropdownButton<String>(
-                      value: selectedSubCategory2,
-                      onChanged: (String? newValue) {
-                        setState(() {
-                          selectedSubCategory2 = newValue!;
-                        });
-                      },
-                      items: subCategories2.map((String value) {
-                        return DropdownMenuItem<String>(
-                          value: value,
-                          child: Text(value),
-                        );
-                      }).toList(),
-                    ),
-                  ],
-                ),
-              ],
-            ),
-                Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        body: SingleChildScrollView(
+          child: Center(
+            child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text('사용자 ID:'),
+                  Text(user.User_ID),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text('사용자 닉네임 : ',),
+                  Text(user.User_Nic),
+                ],
+              ),
+              Padding(padding: EdgeInsets.all(20)),
+              Column(
+                children: [
+                  Text('취미선택',style: TextStyle(fontSize: 20),),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       SizedBox(
-                        width: MediaQuery.of(context).size.width*0.33,
+                        width: MediaQuery.of(context).size.width * 0.33,
                         child: DropdownButton<String>(
-                          value: selectedLocal1,
+                          value: selectedCategory1,
                           onChanged: (String? newValue) {
                             setState(() {
-                              selectedLocal1 = newValue!;
-                              selectedLocal_detail1 = detail_Local[selectedLocal1]![0];
+                              selectedCategory1 = newValue!;
+                              subCategories1 = getSubCategories(selectedCategory1);
+                              selectedSubCategory1 = subCategories1.isNotEmpty
+                                  ? subCategories1[0]
+                                  : ''; // 초기값 설정
                             });
                           },
-                          items: detail_Local.keys.map((String value) {
+                          items: Hobbys.map((String value) {
                             return DropdownMenuItem<String>(
                               value: value,
                               child: Text(value),
@@ -237,34 +151,38 @@ class _User_moState extends State<User_mo> {
                       ),
                       SizedBox(height: 20.0),
                       DropdownButton<String>(
-                        value: selectedLocal_detail1,
+                        value: selectedSubCategory1,
                         onChanged: (String? newValue) {
                           setState(() {
-                            selectedLocal_detail1 = newValue!;
+                            selectedSubCategory1 = newValue!;
                           });
                         },
-                        items: detail_locals1.map((String value) {
+                        items: subCategories1.map((String value) {
                           return DropdownMenuItem<String>(
                             value: value,
                             child: Text(value),
                           );
                         }).toList(),
                       ),
-                    ]),
-                Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       SizedBox(
-                        width: MediaQuery.of(context).size.width*0.33,
+                        width: MediaQuery.of(context).size.width * 0.33,
                         child: DropdownButton<String>(
-                          value: selectedLocal2,
+                          value: selectedCategory3,
                           onChanged: (String? newValue) {
                             setState(() {
-                              selectedLocal2 = newValue!;
-                              selectedLocal_detail2 = detail_Local[selectedLocal2]![0];
+                              selectedCategory3 = newValue!;
+                              subCategories3 = getSubCategories(selectedCategory3);
+                              selectedSubCategory3 = subCategories3.isNotEmpty
+                                  ? subCategories3[0]
+                                  : ''; // 초기값 설정
                             });
                           },
-                          items: detail_Local.keys.map((String value) {
+                          items: Hobbys.map((String value) {
                             return DropdownMenuItem<String>(
                               value: value,
                               child: Text(value),
@@ -274,34 +192,38 @@ class _User_moState extends State<User_mo> {
                       ),
                       SizedBox(height: 20.0),
                       DropdownButton<String>(
-                        value: selectedLocal_detail2,
+                        value: selectedSubCategory3,
                         onChanged: (String? newValue) {
                           setState(() {
-                            selectedLocal_detail2 = newValue!;
+                            selectedSubCategory3 = newValue!;
                           });
                         },
-                        items: detail_locals2.map((String value) {
+                        items: subCategories3.map((String value) {
                           return DropdownMenuItem<String>(
                             value: value,
                             child: Text(value),
                           );
                         }).toList(),
                       ),
-                    ]),
-                Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       SizedBox(
-                        width: MediaQuery.of(context).size.width*0.33,
+                        width: MediaQuery.of(context).size.width * 0.33,
                         child: DropdownButton<String>(
-                          value: selectedLocal3,
+                          value: selectedCategory2,
                           onChanged: (String? newValue) {
                             setState(() {
-                              selectedLocal3 = newValue!;
-                              selectedLocal_detail3 = detail_Local[selectedLocal3]![0];
+                              selectedCategory2 = newValue!;
+                              subCategories2 = getSubCategories(selectedCategory2);
+                              selectedSubCategory2 = subCategories2.isNotEmpty
+                                  ? subCategories2[0]
+                                  : ''; // 초기값 설정
                             });
                           },
-                          items: detail_Local.keys.map((String value) {
+                          items: Hobbys.map((String value) {
                             return DropdownMenuItem<String>(
                               value: value,
                               child: Text(value),
@@ -309,28 +231,152 @@ class _User_moState extends State<User_mo> {
                           }).toList(),
                         ),
                       ),
+                      SizedBox(height: 20.0),
                       DropdownButton<String>(
-                        value: selectedLocal_detail3,
+                        value: selectedSubCategory2,
                         onChanged: (String? newValue) {
                           setState(() {
-                            selectedLocal_detail3 = newValue!;
+                            selectedSubCategory2 = newValue!;
                           });
                         },
-                        items: detail_locals3.map((String value) {
+                        items: subCategories2.map((String value) {
                           return DropdownMenuItem<String>(
                             value: value,
                             child: Text(value),
                           );
                         }).toList(),
                       ),
-                    ]),
-                ElevatedButton(onPressed: (){
-                  final options = {
+                    ],
+                  ),
+                ],
+              ),
+                  Padding(padding: EdgeInsets.all(20)),
+                  Text('위치선택',style: TextStyle(fontSize: 20),),
+                  Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        SizedBox(
+                          width: MediaQuery.of(context).size.width*0.33,
+                          child: DropdownButton<String>(
+                            value: selectedLocal1,
+                            onChanged: (String? newValue) {
+                              setState(() {
+                                selectedLocal1 = newValue!;
+                                selectedLocal_detail1 = detail_Local[selectedLocal1]![0];
+                              });
+                            },
+                            items: detail_Local.keys.map((String value) {
+                              return DropdownMenuItem<String>(
+                                value: value,
+                                child: Text(value),
+                              );
+                            }).toList(),
+                          ),
+                        ),
+                        DropdownButton<String>(
+                          value: selectedLocal_detail1,
+                          onChanged: (String? newValue) {
+                            setState(() {
+                              selectedLocal_detail1 = newValue!;
+                            });
+                          },
+                          items: detail_locals1.map((String value) {
+                            return DropdownMenuItem<String>(
+                              value: value,
+                              child: Text(value),
+                            );
+                          }).toList(),
+                        ),
+                      ]),
+                  Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        SizedBox(
+                          width: MediaQuery.of(context).size.width*0.33,
+                          child: DropdownButton<String>(
+                            value: selectedLocal2,
+                            onChanged: (String? newValue) {
+                              setState(() {
+                                selectedLocal2 = newValue!;
+                                selectedLocal_detail2 = detail_Local[selectedLocal2]![0];
+                              });
+                            },
+                            items: detail_Local.keys.map((String value) {
+                              return DropdownMenuItem<String>(
+                                value: value,
+                                child: Text(value),
+                              );
+                            }).toList(),
+                          ),
+                        ),
+                        DropdownButton<String>(
+                          value: selectedLocal_detail2,
+                          onChanged: (String? newValue) {
+                            setState(() {
+                              selectedLocal_detail2 = newValue!;
+                            });
+                          },
+                          items: detail_locals2.map((String value) {
+                            return DropdownMenuItem<String>(
+                              value: value,
+                              child: Text(value),
+                            );
+                          }).toList(),
+                        ),
+                      ]),
+                  Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        SizedBox(
+                          width: MediaQuery.of(context).size.width*0.33,
+                          child: DropdownButton<String>(
+                            value: selectedLocal3,
+                            onChanged: (String? newValue) {
+                              setState(() {
+                                selectedLocal3 = newValue!;
+                                selectedLocal_detail3 = detail_Local[selectedLocal3]![0];
+                              });
+                            },
+                            items: detail_Local.keys.map((String value) {
+                              return DropdownMenuItem<String>(
+                                value: value,
+                                child: Text(value),
+                              );
+                            }).toList(),
+                          ),
+                        ),
+                        DropdownButton<String>(
+                          value: selectedLocal_detail3,
+                          onChanged: (String? newValue) {
+                            setState(() {
+                              selectedLocal_detail3 = newValue!;
+                            });
+                          },
+                          items: detail_locals3.map((String value) {
+                            return DropdownMenuItem<String>(
+                              value: value,
+                              child: Text(value),
+                            );
+                          }).toList(),
+                        ),
+                      ]),
+                  ElevatedButton(onPressed: (){
+                    final options = {
+                        "nickname" : user.User_Nic,
+                        "local" : selectedLocal_detail1+" "+selectedLocal_detail2+" "+selectedLocal_detail3,
+                        "hobby" : selectedSubCategory1+" "+selectedSubCategory2+" "+selectedSubCategory3,
+                    };
+                    dio.post("$baseUrl/member/update",data: options).then((value) => {
+                      setState(() {
+                        user.User_Local =   selectedLocal_detail1+" "+selectedLocal_detail2+" "+selectedLocal_detail3;
+                        user.User_Hobby = selectedSubCategory1+" "+selectedSubCategory2+" "+selectedSubCategory3;
+                        _successDialog(context);
+                        })
+                      });
 
-                  };
-
-                }, child: Text('회원수정'))
-          ]),
+                  }, child: Text('회원수정'))
+            ]),
+          ),
         ),
       ),
     );

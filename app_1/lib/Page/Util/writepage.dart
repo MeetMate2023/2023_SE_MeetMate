@@ -1,5 +1,6 @@
 import 'package:app_1/Global/koreanlocal.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import '../../Global/global.dart';
 import '../../Global/hobbylist.dart';
 import '../Home/homepage.dart';
@@ -16,6 +17,7 @@ class _WriteState extends State<Write> {
   final title_controller = TextEditingController();
   final chat_controller = TextEditingController();
   final time_controller = TextEditingController();
+  String _resultMessage = '';
   String selectedCategory = '운동';
   String selectedSubCategory = '축구';
   String selectedLocal = '서울';
@@ -266,10 +268,17 @@ class _WriteState extends State<Write> {
                         height: 50,
                         child: TextField(
                           controller: time_controller,
+                          inputFormatters: [
+                            FilteringTextInputFormatter.digitsOnly,
+                            LengthLimitingTextInputFormatter(10),
+                            MyInputFormatter(),
+                          ],
+                          keyboardType: TextInputType.number,
                           decoration: InputDecoration(
-                              border: OutlineInputBorder(),
-                              labelText: '모임 시간(xx시xx분)'),
-                        )),
+                            border: OutlineInputBorder(),
+                            labelText: '일정 (yy년 mm월 dd일 hh시 mm분)',
+                          ),
+                        ),),
 
                     SizedBox(
                         width: MediaQuery.of(context).size.width * 0.75,
@@ -290,5 +299,34 @@ class _WriteState extends State<Write> {
             ),
           )),
     );
+  }
+  void _validateInput() {
+    String inputText = time_controller.text;
+
+    if (RegExp(r'^\d{2}년\d{2}월\d{2}일\d{2}시\d{2}분$').hasMatch(inputText)) {
+      setState(() {
+        _resultMessage = '$inputText';
+      });
+    } else {
+      setState(() {
+        _resultMessage = '';
+      });
+    }
+  }
+}
+
+class MyInputFormatter extends TextInputFormatter {
+  @override
+  TextEditingValue formatEditUpdate(
+      TextEditingValue oldValue, TextEditingValue newValue) {
+    if (newValue.text.length == 10) {
+      final String formattedText =
+          '${newValue.text.substring(0, 2)}년${newValue.text.substring(2, 4)}월${newValue.text.substring(4,6)}일${newValue.text.substring(6,8)}시${newValue.text.substring(8,10)}분';
+      return TextEditingValue(
+        text: formattedText,
+        selection: TextSelection.collapsed(offset: formattedText.length),
+      );
+    }
+    return newValue;
   }
 }

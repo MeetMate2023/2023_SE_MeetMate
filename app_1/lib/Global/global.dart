@@ -97,7 +97,7 @@ late List<Map<String, dynamic>> reviewList; // 글에 달린 댓글을 저장하
 User user = User(); // 유저 객체 생성
 
 late List<dynamic> a;
-late List<dynamic> invit;
+List<dynamic> invit = [];
 
 
 
