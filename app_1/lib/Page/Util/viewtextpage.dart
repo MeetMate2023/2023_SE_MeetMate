@@ -157,7 +157,7 @@ class _ViewtextState extends State<Viewtext> {
 
   void Delete_post() {
     final options = {
-      "articleId": dataList[widget.index]['id'],
+      "id": dataList[widget.index]['id'],
     };
     dio.post("$baseUrl/article/delete", data: options).then(
       (result) {

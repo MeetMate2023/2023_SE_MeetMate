@@ -127,6 +127,7 @@ class _LoginState extends State<Login> {
                   child: Text('회원가입')),
               ElevatedButton(
                   onPressed: () {
+                    events.clear();
                     login();
                   },
                   child: Text('로그인')), // 로그인 버튼

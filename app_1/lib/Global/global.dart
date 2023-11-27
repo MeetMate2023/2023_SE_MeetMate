@@ -97,7 +97,18 @@ late List<Map<String, dynamic>> reviewList; // 글에 달린 댓글을 저장하
 User user = User(); // 유저 객체 생성
 
 late List<dynamic> a;
+class Event {
+  String text = '';
+
+  Event(this.text);
+}
 List<dynamic> invit = [];
+Map<DateTime, List<Event>> events = {
+  DateTime.utc(2000, 01, 01): [
+    Event('aaa aaa aaa'),
+  ],
+};
+
 
 
 
