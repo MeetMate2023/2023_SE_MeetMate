@@ -44,13 +44,12 @@ public class MemberController {
     }
     //유저 내용 업데이트
     @PostMapping("/member/update")
-    public boolean update(){
-        return true;
+    public boolean update(@RequestBody JoinRequest joinRequest){
+        return memberService.update(joinRequest);
     }
     //user nickname 모두 출력
     @GetMapping("/member/admin")
     public List<String> all_user_list(){
-        System.out.println("member admin 실행 시작");
         return memberService.all_user_list();
     }
 }

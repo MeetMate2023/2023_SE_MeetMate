@@ -19,8 +19,13 @@ public class InvitationController {
     public boolean invite(@RequestBody InviteRequest inviteRequest){
         return invitationService.invite(inviteRequest);
     }
+
     @PostMapping("/invitation/send")
     public List<InviteDTO> send(@RequestBody InviteRequest inviteRequest){
         return invitationService.send(inviteRequest);
+    }
+    @PostMapping("/invitation/permit")
+    public boolean permit(@RequestBody InviteRequest inviteRequest){
+        return invitationService.permit(inviteRequest);
     }
 }

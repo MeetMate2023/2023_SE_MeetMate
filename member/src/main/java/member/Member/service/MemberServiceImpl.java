@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -64,17 +64,25 @@ public class MemberServiceImpl implements MemberService {
         return deletedRecords > 0;
     }
 
-    //user nickname 전부 출력
     public List<String> all_user_list(){
         List<Member> members = memberRepository.findAll();
         List<String> nicknames = new ArrayList<>();
-
         for (Member member : members) {
             nicknames.add(member.getUid());
         }
-        for(String nickname : nicknames){
-            System.out.println(nickname);
-        }
         return nicknames;
+    }
+    public boolean update(JoinRequest joinRequest){
+        String nickname = joinRequest.getNickname();
+        String local = joinRequest.getLocal();
+        String hobby = joinRequest.getHobby();
+        Member member = memberRepository.findByNickname(nickname);
+
+        member.setLocal(local);
+        member.setHobby(hobby);
+        memberRepository.save(member);
+        return true; // 업데이트 성공
+
+
     }
 }

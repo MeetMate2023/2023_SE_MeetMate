@@ -10,4 +10,6 @@ public interface InvitationService {
     boolean invite(InviteRequest inviteRequest);
 
     List<InviteDTO>send(InviteRequest inviteRequest);
+
+    boolean permit(InviteRequest inviteRequest);
 }
