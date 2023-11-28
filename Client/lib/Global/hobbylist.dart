@@ -7,7 +7,7 @@ final List<String> Hobbys = [
   '문화/공연',
   '여가',
   '기타'
-];
+]; // 상위 취미 리스트
 final detail_hobbys = [
   ['축구', '야구', '농구', '배구', '수영', '테니스', '배드민턴'],
   ['등산', '트래킹', '캠핑', '국내여행', '해외여행', '낚시'],
@@ -19,6 +19,6 @@ final detail_hobbys = [
   ['기타']
 
 
-];
+]; // 하위 취미 리스트
 
-List<String> myHobby = [];
+List<String> myHobby = []; // 현재 저장된 취미

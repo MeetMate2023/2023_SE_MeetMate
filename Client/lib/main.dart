@@ -1,4 +1,6 @@
 import 'package:app_1/Login/loginpage.dart';
+import 'package:app_1/Login/registlocal.dart';
+import 'package:app_1/Page/Admin/adminpage.dart';
 import 'package:app_1/Page/Calender/calender.dart';
 import 'package:app_1/Page/Home/homepage.dart';
 import 'package:app_1/Page/Info/myinfopage.dart';
@@ -6,7 +8,7 @@ import 'package:app_1/Page/Util/writepage.dart';
 import 'package:app_1/testpage.dart';
 import 'package:flutter/material.dart';
 
-import 'Login/pickhobbypage.dart';
+import 'Login/registhobbypage.dart';
 
 void main() {
   runApp(const MyApp());

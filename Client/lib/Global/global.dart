@@ -7,10 +7,10 @@ import 'package:app_1/Page/Info/myinfopage.dart';
 import 'package:flutter/material.dart';
 import 'package:dio/dio.dart';
 
-Dio dio =Dio();
-String baseUrl = "https://fond-stinkbug-simply.ngrok-free.app";
+Dio dio =Dio(); // http통신을 위한 Dio객체 생성
+String baseUrl = "https://fond-stinkbug-simply.ngrok-free.app"; // 서버 baseUrl
 
-class User{
+class User{ // 유저 정보 저장
   late String User_Local ='';
   late String User_Name='';
   late String User_Hobby='';
@@ -63,31 +63,53 @@ class User{
   }
 
 }
-
-class Post {
-  final String title;
-  final String content;
-  final String category;
-  final String author;
-  final  String date;
-  final String summary;
-  final String location;
-  Post({required this.title, required this.content, required this.author,required this.date,required this.summary,required this.category,required this.location});
+refresh() { // 새로고침시 나오는 알림창
+  showDialog(
+    context: navigatorContext,
+    builder: (BuildContext context) {
+      return GestureDetector(
+        onTap: () {
+          Navigator.of(context).pop();
+        },
+        child: AlertDialog(
+          content: Text('새로고침 성공'),
+          actions: <Widget>[
+            Container(
+              width: 1,
+              height: 1,
+              child: TextButton(
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+                child: Text(''),
+              ),
+            ),
+          ],
+        ),
+      );
+    },
+  );
 }
-final List<Post> posts = [
-  Post(summary: '같이 볼링할사람 구합니다',title: '볼링 주말 초보모임',
-      content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-      author: 'aaa',
-      date:(DateTime.now().year.toString()+'-'+DateTime.now().month.toString()+'-'+DateTime.now().day.toString()),
-      category: '볼링',
-      location: '월성동',
-  ),
+late Future<List<Map<String, dynamic>>> futureDataList; // 글 정보를 모두 저장하는 변수
+late List<Map<String, dynamic>> dataList; // 글 정보를 리스트화 해서 출력 가능한 상태로 저장하는 변수
+late BuildContext navigatorContext; // 현재 사용자가 보고있는 페이지에 대한 정보 저장하는 변수
+late List<Map<String, dynamic>> reviewList; // 글에 달린 댓글을 저장하는 변수
+User user = User(); // 유저 객체 생성
 
-];
+late List<dynamic> a;
+class Event {
+  String text = '';
 
-late BuildContext navigatorContext;
+  Event(this.text);
+}
+List<dynamic> invit = [];
+Map<DateTime, List<Event>> events = {
+  DateTime.utc(2000, 01, 01): [
+    Event('aaa aaa aaa'),
+  ],
+};
 
-User user = User();
+
 
 
 

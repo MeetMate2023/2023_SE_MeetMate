@@ -3,7 +3,7 @@ final List<String> regions = [
   '인천', '광주', '대전', '울산',
   '세종', '강원', '충북', '충남',
   '전북', '전남', '경북', '경남', '제주'
-];
+]; // 상위 위치 리스트
 
 final List<List<String>> detail_regions = [
 // 서울
@@ -56,4 +56,4 @@ final List<List<String>> detail_regions = [
 
 // 제주
   ['서귀포시', '제주시']
-];
+]; // 하위 취미 리스트

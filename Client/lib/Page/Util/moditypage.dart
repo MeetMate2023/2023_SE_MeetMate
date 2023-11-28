@@ -1,28 +1,35 @@
-import 'package:app_1/Global/koreanlocal.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+
 import '../../Global/global.dart';
 import '../../Global/hobbylist.dart';
+import '../../Global/koreanlocal.dart';
 import '../Home/homepage.dart';
 
-class Write extends StatefulWidget {
-  const Write({super.key});
-
+class Modify extends StatefulWidget {
+  final int index;
+  Modify({required this.index});
   @override
-  State<Write> createState() => _WriteState();
+  State<Modify> createState() => _ModifyState();
 }
 
-class _WriteState extends State<Write> {
+class _ModifyState extends State<Modify> {
+
   final content_controller = TextEditingController();
   final title_controller = TextEditingController();
   final chat_controller = TextEditingController();
   final time_controller = TextEditingController();
-  String _resultMessage = '';
+
   String selectedCategory = '운동';
   String selectedSubCategory = '축구';
   String selectedLocal = '서울';
   String selectedLocal_detail = '강남구';
-
+  void initState(){
+    super.initState();
+    content_controller.text = dataList[widget.index]['content'];
+    title_controller.text = dataList[widget.index]['title'];
+    chat_controller.text = dataList[widget.index]['chat'];
+    time_controller.text = dataList[widget.index]['meetTime'];
+  }
   _successDialog(BuildContext context) {
     showDialog(
         context: context,
@@ -30,7 +37,7 @@ class _WriteState extends State<Write> {
         builder: (BuildContext ctx) {
           return AlertDialog(
             title: Text('성공'),
-            content: Text('글을 저장하였습니다'),
+            content: Text('글을 수정하였습니다'),
             actions: [
               TextButton(
                 onPressed: () {
@@ -51,7 +58,7 @@ class _WriteState extends State<Write> {
         builder: (BuildContext ctx) {
           return AlertDialog(
             title: Text("실패"),
-            content: Text("모든 내용을 채워주세요/내용 필드는 10자 이상으로 작성해주세요"),
+            content: Text("모든 내용을 채워주세요/내용필드는 10자 이상 작성해주세요"),
             actions: [
               TextButton(
                 onPressed: () {
@@ -105,36 +112,39 @@ class _WriteState extends State<Write> {
     if (title_controller.text.isEmpty ||
         content_controller.text.length<10 ||
         chat_controller.text.isEmpty) {
+      print(title_controller.text);
+      print(content_controller.text);
+      print(chat_controller.text);
       _failDialog(context);
       return;
     }
     final options = {
+      "article_index": dataList[widget.index]['article_index'],
       "title": title_controller.text,
       "nickname": user.User_Nic,
       "category": selectedSubCategory,
       "location": selectedLocal_detail,
       "content": content_controller.text,
       "chat": chat_controller.text,
-      "meetTime" : time_controller.text,
     };
     print(options);
     dio
-        .post("$baseUrl/article/write", data: options)
+        .post("$baseUrl/article/edit", data: options)
         .then((result) async => {
-              print(result),
-              if (result.data)
-                {
-                  _successDialog(context)
-                }
-              else
-                {
-                  _failDialog(context)
-                }
-            })
+      print(result),
+      if (result.data)
+        {
+          _successDialog(context)
+        }
+      else
+        {
+          _failDialog(context)
+        }
+    })
         .catchError((error) => {
-              print(error),
-              print("에러"),
-            });
+      print(error),
+      print("에러"),
+    });
   }
 
   @override
@@ -162,7 +172,7 @@ class _WriteState extends State<Write> {
                     ),
                     Container(
                       decoration:
-                          BoxDecoration(border: Border.all(color: Colors.grey)),
+                      BoxDecoration(border: Border.all(color: Colors.grey)),
                       width: MediaQuery.of(context).size.width * 0.75,
                       height: 70,
                       child: Row(
@@ -267,23 +277,6 @@ class _WriteState extends State<Write> {
                         width: MediaQuery.of(context).size.width * 0.75,
                         height: 50,
                         child: TextField(
-                          controller: time_controller,
-                          inputFormatters: [
-                            FilteringTextInputFormatter.digitsOnly,
-                            LengthLimitingTextInputFormatter(10),
-                            MyInputFormatter(),
-                          ],
-                          keyboardType: TextInputType.number,
-                          decoration: InputDecoration(
-                            border: OutlineInputBorder(),
-                            labelText: '일정 (yy년 mm월 dd일 hh시 mm분)',
-                          ),
-                        ),),
-
-                    SizedBox(
-                        width: MediaQuery.of(context).size.width * 0.75,
-                        height: 50,
-                        child: TextField(
                           controller: chat_controller,
                           decoration: InputDecoration(
                               border: OutlineInputBorder(),
@@ -292,41 +285,12 @@ class _WriteState extends State<Write> {
                     ElevatedButton(
                         onPressed: () {
                           write();
-                       //   Navigator.pop(context);
+                          //   Navigator.pop(context);
                         },
                         child: Text('글쓰기'))
                   ]),
             ),
           )),
     );
-  }
-  void _validateInput() {
-    String inputText = time_controller.text;
-
-    if (RegExp(r'^\d{2}년\d{2}월\d{2}일\d{2}시\d{2}분$').hasMatch(inputText)) {
-      setState(() {
-        _resultMessage = '$inputText';
-      });
-    } else {
-      setState(() {
-        _resultMessage = '';
-      });
-    }
-  }
-}
-
-class MyInputFormatter extends TextInputFormatter {
-  @override
-  TextEditingValue formatEditUpdate(
-      TextEditingValue oldValue, TextEditingValue newValue) {
-    if (newValue.text.length == 10) {
-      final String formattedText =
-          '${newValue.text.substring(0, 2)}년${newValue.text.substring(2, 4)}월${newValue.text.substring(4,6)}일${newValue.text.substring(6,8)}시${newValue.text.substring(8,10)}분';
-      return TextEditingValue(
-        text: formattedText,
-        selection: TextSelection.collapsed(offset: formattedText.length),
-      );
-    }
-    return newValue;
   }
 }

@@ -1,4 +1,4 @@
-import 'package:app_1/Login/pickhobbypage.dart';
+import 'package:app_1/Login/registhobbypage.dart';
 import 'package:app_1/Global/global.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +17,7 @@ class _RegistrationState extends State<Registration> {
   bool id_check = false;
   bool nic_check = false;
   bool is_company = false;
-
+ // => 전부 입력받을때 사용하는 컨트롤러
   _showDialog(BuildContext context) {
     showDialog(
         context: context,
@@ -36,7 +36,7 @@ class _RegistrationState extends State<Registration> {
             ],
           );
         });
-  }
+  } // 빈 필드가 있을때 띄우는 경고창
 
   _check_available_id_Dialog(BuildContext context) {
     showDialog(
@@ -56,7 +56,7 @@ class _RegistrationState extends State<Registration> {
             ],
           );
         });
-  }
+  } // 충복체크 안햇을때 나오는 경고창
 
   _available_id_Dialog(BuildContext context) {
     showDialog(
@@ -76,7 +76,7 @@ class _RegistrationState extends State<Registration> {
             ],
           );
         });
-  }
+  } // 사용가능한 아이디일때 나오는 알림창
 
   _available_nic_Dialog(BuildContext context) {
     showDialog(
@@ -96,7 +96,7 @@ class _RegistrationState extends State<Registration> {
             ],
           );
         });
-  }
+  } // 사용가능한 닉네임일때 나오는 알림창
 
   _refuse_id_Dialog(BuildContext context) {
     showDialog(
@@ -138,15 +138,16 @@ class _RegistrationState extends State<Registration> {
         });
   }
 
-  void _checkd_id_uplication() {
-    final options = {"id": ID_Controller.text};
+  void _checkd_id_uplication() { // id중복 체크
+    final options = {"uid": ID_Controller.text};
     print(ID_Controller.text);
-    dio.post("$baseUrl/id_check", data: options).then((result) async => {
+    dio.post("$baseUrl/member/id_check", data: options).then((result) async => {
           print(result.data.toString()),
           if (result.data)
             {
               _available_id_Dialog(context),
               setState(() {
+                if(!id_check)
                 id_check = !id_check;
               })
             }
@@ -157,15 +158,16 @@ class _RegistrationState extends State<Registration> {
         });
   }
 
-  void _checkd_nic_uplication() {
+  void _checkd_nic_uplication() { // 닉네임 중복 체크
     final options = {"nickname": Nicname_Controller.text};
-    dio.post("$baseUrl/nickname_check", data: options).then((result) async => {
+    dio.post("$baseUrl/member/nickname_check", data: options).then((result) async => {
           print(Nicname_Controller.text),
           print(result.data.toString()),
           if (result.data)
             {
               _available_nic_Dialog(context),
               setState(() {
+                if(!nic_check)
                 nic_check = !nic_check;
               })
             }
@@ -296,9 +298,9 @@ class _RegistrationState extends State<Registration> {
                   user.set_Nic(Nicname_Controller.text);
                   user.set_Type(is_company);
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return Pick();
+                    return Hobby();
                   }));
-                },
+                }, // Next로 넘어가기전 필드에 적어놓은 정보 User에 저장
                 child: Text('Next')),
           ],
         ),

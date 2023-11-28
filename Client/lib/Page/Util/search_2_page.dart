@@ -18,11 +18,6 @@ class _Search_2State extends State<Search_2> {
       appBar: AppBar(title: Text(Hobbys[widget.index])),
       body: Column(
         children: [
-          SizedBox(
-            width: MediaQuery.of(context).size.width*0.7,
-            height: 50,
-            child: TextField(controller: _search_controller),
-          ),
           Padding(padding: EdgeInsets.only(bottom: 20)),
           SizedBox(
             height: MediaQuery.of(context).size.height*0.3,
