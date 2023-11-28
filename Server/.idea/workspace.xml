@@ -5,10 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37a861c9-7b14-4366-a9d9-51af096f6530" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Flutter Assemble.build/InputFileList-33CC111E2044C6BF0003C045-FlutterInputs-544e4395750787fc346b40c7e102f14a-resolved.xcfilelist" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Flutter Assemble.build/InputFileList-33CC111E2044C6BF0003C045-FlutterInputs-544e4395750787fc346b40c7e102f14a-resolved.xcfilelist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Flutter Assemble.build/OutputFileList-33CC111E2044C6BF0003C045-FlutterOutputs-a44224a7e6265df1ff4dec59abebe94d-resolved.xcfilelist" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Flutter Assemble.build/OutputFileList-33CC111E2044C6BF0003C045-FlutterOutputs-a44224a7e6265df1ff4dec59abebe94d-resolved.xcfilelist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/DerivedSources/app_1-Swift.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/DerivedSources/app_1-Swift.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/SwiftStdLibToolInputDependencies.dep" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/SwiftStdLibToolInputDependencies.dep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/build/macos/Build/Intermediates.noindex/XCBuildData/build.db" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/build/macos/Build/Intermediates.noindex/XCBuildData/build.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/attachments/1b7ac61b8ecc62c8e69b213f182eca6b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/attachments/4a4d8b323fb25206fc5fb1b1de712166" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/attachments/67e76468a8cd78f03ef5535f8fd0ab00" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/attachments/76f496b0841e3e41820ee9db6a93f46d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/attachments/7e35e30dd7907e966c37030d49c2e689" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/attachments/8bba4233626f64a7ea772bb94a08a1a9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/attachments/9b9312fcfd6614de55b80fcaa4378dc4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/attachments/d41d8cd98f00b204e9800998ecf8427e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/attachments/d9aa8fac8b3d87c1a3d5954eb979b71f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/attachments/dd1658b7275676660fb466feae65cfe1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/attachments/f0d4f359dd79bfaa6945ee0962a398f3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/attachments/fd8314defc70a8778956f026c0ddfd19" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/build-request.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/description.msgpack" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/target-graph.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/task-store.msgpack" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/build/macos/Build/Products/Debug/.last_build_id" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/build/macos/Build/Products/Debug/.last_build_id" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/build/macos/Build/Products/Debug/App.framework/Versions/A/App" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/build/macos/Build/Products/Debug/App.framework/Versions/A/App" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/build/macos/Build/Products/Debug/FlutterMacOS.framework/Versions/A/FlutterMacOS" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/build/macos/Build/Products/Debug/FlutterMacOS.framework/Versions/A/FlutterMacOS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/App.framework/Versions/A/App" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/App.framework/Versions/A/App" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/FlutterMacOS.framework/Versions/A/FlutterMacOS" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/FlutterMacOS.framework/Versions/A/FlutterMacOS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/build/macos/Build/Products/Debug/app_1.app/Contents/MacOS/app_1" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/build/macos/Build/Products/Debug/app_1.app/Contents/MacOS/app_1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/build/macos/Build/Products/Debug/app_1.app/Contents/Resources/Assets.car" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/build/macos/Build/Products/Debug/app_1.app/Contents/Resources/Assets.car" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/build/macos/Build/Products/Debug/app_1.app/Contents/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/build/macos/Build/Products/Debug/app_1.app/Contents/_CodeSignature/CodeResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/build/macos/ModuleCache.noindex/Session.modulevalidation" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/build/macos/ModuleCache.noindex/Session.modulevalidation" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/build/macos/SDKStatCaches.noindex/macosx14.0-23A334-4a76ee93ef69e462914ffe9883de22b8.sdkstatcache" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/build/macos/SDKStatCaches.noindex/macosx14.0-23A334-4a76ee93ef69e462914ffe9883de22b8.sdkstatcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/build/macos/info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/build/macos/info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/member.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/member/MemberApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/member/MemberApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +62,9 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
   <component name="ProjectId" id="2YFnmJTb7cGv5bDggVs0YscakVD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -34,6 +73,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -68,6 +108,7 @@
       <option name="presentableId" value="Default" />
       <updated>1700130358811</updated>
       <workItem from="1700130370070" duration="925000" />
+      <workItem from="1701168384382" duration="5463000" />
     </task>
     <servers />
   </component>
@@ -84,5 +125,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

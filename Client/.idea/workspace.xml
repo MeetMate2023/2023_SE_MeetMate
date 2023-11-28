@@ -1,354 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a383a25a-742f-464a-aa21-8c5a6fc3b785" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.dart_tool/dartpad/web_plugin_registrant.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/0009916bd278bced681ca5b0d0213013/.filecache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/0009916bd278bced681ca5b0d0213013/App.framework/App" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/0009916bd278bced681ca5b0d0213013/app.dill" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/0009916bd278bced681ca5b0d0213013/debug_app.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/0009916bd278bced681ca5b0d0213013/debug_macos_bundle_flutter_assets.stamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/0009916bd278bced681ca5b0d0213013/debug_macos_framework.stamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/0009916bd278bced681ca5b0d0213013/debug_unpack_macos.stamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/0009916bd278bced681ca5b0d0213013/flutter_assets.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/0009916bd278bced681ca5b0d0213013/gen_dart_plugin_registrant.stamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/0009916bd278bced681ca5b0d0213013/gen_localizations.stamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/0009916bd278bced681ca5b0d0213013/kernel_snapshot.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/0009916bd278bced681ca5b0d0213013/kernel_snapshot.stamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/0009916bd278bced681ca5b0d0213013/outputs.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dart_tool/version" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/1b6b88922ca26dadc0a80e234addfd8b/_composite.stamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/1b6b88922ca26dadc0a80e234addfd8b/gen_dart_plugin_registrant.stamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/1b6b88922ca26dadc0a80e234addfd8b/gen_localizations.stamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/a46f85df11ed3d278105635939097b84.cache.dill.track.dill" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/last_build_run.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Flutter Assemble.build/InputFileList-33CC111E2044C6BF0003C045-FlutterInputs-544e4395750787fc346b40c7e102f14a-resolved.xcfilelist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Flutter Assemble.build/OutputFileList-33CC111E2044C6BF0003C045-FlutterOutputs-a44224a7e6265df1ff4dec59abebe94d-resolved.xcfilelist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Flutter Assemble.build/Script-33CC111E2044C6BF0003C045.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/Base.lproj/MainMenu-PartialInfo.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/DerivedSources/Entitlements.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/DerivedSources/GeneratedAssetSymbols-Index.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/DerivedSources/GeneratedAssetSymbols.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/DerivedSources/GeneratedAssetSymbols.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/DerivedSources/app_1-Swift.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/Objects-normal/x86_64/AppDelegate.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/Objects-normal/x86_64/AppDelegate.dia" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/Objects-normal/x86_64/AppDelegate.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/Objects-normal/x86_64/AppDelegate.swiftconstvalues" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/Objects-normal/x86_64/AppDelegate.swiftdeps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/Objects-normal/x86_64/GeneratedAssetSymbols.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/Objects-normal/x86_64/GeneratedAssetSymbols.dia" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/Objects-normal/x86_64/GeneratedAssetSymbols.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/Objects-normal/x86_64/GeneratedAssetSymbols.swiftconstvalues" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/Objects-normal/x86_64/GeneratedAssetSymbols.swiftdeps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/Objects-normal/x86_64/GeneratedPluginRegistrant.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/Objects-normal/x86_64/GeneratedPluginRegistrant.dia" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/Objects-normal/x86_64/GeneratedPluginRegistrant.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/Objects-normal/x86_64/GeneratedPluginRegistrant.swiftconstvalues" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/Objects-normal/x86_64/GeneratedPluginRegistrant.swiftdeps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/Objects-normal/x86_64/MainFlutterWindow.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/Objects-normal/x86_64/MainFlutterWindow.dia" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/Objects-normal/x86_64/MainFlutterWindow.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/Objects-normal/x86_64/MainFlutterWindow.swiftconstvalues" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/Objects-normal/x86_64/MainFlutterWindow.swiftdeps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/Objects-normal/x86_64/Runner-OutputFileMap.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/Objects-normal/x86_64/Runner-master-emit-module.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/Objects-normal/x86_64/Runner-master-emit-module.dia" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/Objects-normal/x86_64/Runner-master.priors" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/Objects-normal/x86_64/Runner_const_extract_protocols.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/Objects-normal/x86_64/app_1-Swift.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/Objects-normal/x86_64/app_1.LinkFileList" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/Objects-normal/x86_64/app_1.SwiftFileList" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/Objects-normal/x86_64/app_1.abi.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/Objects-normal/x86_64/app_1.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/Objects-normal/x86_64/app_1.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/Objects-normal/x86_64/app_1.swiftsourceinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/Objects-normal/x86_64/app_1_dependency_info.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/Script-3399D490228B24CF009A79C7.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/SwiftStdLibToolInputDependencies.dep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/all-product-headers.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/app_1-all-non-framework-target-headers.hmap" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/app_1-all-target-headers.hmap" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/app_1-generated-files.hmap" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/app_1-own-target-headers.hmap" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/app_1-project-headers.hmap" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/app_1.app.xcent" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/app_1.app.xcent.der" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/app_1.hmap" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/assetcatalog_dependencies" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/assetcatalog_generated_info.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/PIFCache/project/PROJECT@v11_mod=1701096642.0_hash=18c1723432283e0cc55f10a6dcfd9e02plugins=1OJSG6M1FOV3XYQCBH7Z29RZ0FPR9XDE1-json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/PIFCache/target/TARGET@v11_hash=70594492dcc480103d1276288a474bb2-json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/PIFCache/target/TARGET@v11_hash=ae8e777923fb91324939a7378b9c75e1-json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/PIFCache/target/TARGET@v11_hash=cafdbf145828711b700dcd883a77fe21-json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/PIFCache/workspace/WORKSPACE@v11_hash=058a49228f933dc65a1406fb5353f69d_subobjects=9d42bc57a8f9e038a5be383bb4ba4d60-json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/build.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/attachments/1b7ac61b8ecc62c8e69b213f182eca6b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/attachments/4a4d8b323fb25206fc5fb1b1de712166" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/attachments/67e76468a8cd78f03ef5535f8fd0ab00" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/attachments/76f496b0841e3e41820ee9db6a93f46d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/attachments/7e35e30dd7907e966c37030d49c2e689" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/attachments/8bba4233626f64a7ea772bb94a08a1a9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/attachments/9b9312fcfd6614de55b80fcaa4378dc4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/attachments/d41d8cd98f00b204e9800998ecf8427e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/attachments/d9aa8fac8b3d87c1a3d5954eb979b71f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/attachments/dd1658b7275676660fb466feae65cfe1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/attachments/f0d4f359dd79bfaa6945ee0962a398f3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/attachments/fd8314defc70a8778956f026c0ddfd19" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/build-request.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/description.msgpack" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/target-graph.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/task-store.msgpack" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/.last_build_id" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/App.framework/App" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/App.framework/Resources" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/App.framework/Versions/A/App" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/App.framework/Versions/A/Resources/Info.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/App.framework/Versions/A/Resources/flutter_assets/AssetManifest.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/App.framework/Versions/A/Resources/flutter_assets/AssetManifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/App.framework/Versions/A/Resources/flutter_assets/FontManifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/App.framework/Versions/A/Resources/flutter_assets/NOTICES.Z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/App.framework/Versions/A/Resources/flutter_assets/assets/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/App.framework/Versions/A/Resources/flutter_assets/assets/person.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/App.framework/Versions/A/Resources/flutter_assets/fonts/MaterialIcons-Regular.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/App.framework/Versions/A/Resources/flutter_assets/isolate_snapshot_data" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/App.framework/Versions/A/Resources/flutter_assets/kernel_blob.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/App.framework/Versions/A/Resources/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/App.framework/Versions/A/Resources/flutter_assets/shaders/ink_sparkle.frag" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/App.framework/Versions/A/Resources/flutter_assets/vm_snapshot_data" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/App.framework/Versions/Current" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/FlutterMacOS.framework/FlutterMacOS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/FlutterMacOS.framework/Headers" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/FlutterMacOS.framework/Modules" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/FlutterMacOS.framework/Resources" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/FlutterMacOS.framework/Versions/A/FlutterMacOS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/FlutterMacOS.framework/Versions/A/Headers/FlutterAppDelegate.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/FlutterMacOS.framework/Versions/A/Headers/FlutterAppLifecycleDelegate.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/FlutterMacOS.framework/Versions/A/Headers/FlutterBinaryMessenger.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/FlutterMacOS.framework/Versions/A/Headers/FlutterChannels.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/FlutterMacOS.framework/Versions/A/Headers/FlutterCodecs.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/FlutterMacOS.framework/Versions/A/Headers/FlutterDartProject.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/FlutterMacOS.framework/Versions/A/Headers/FlutterEngine.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/FlutterMacOS.framework/Versions/A/Headers/FlutterMacOS.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/FlutterMacOS.framework/Versions/A/Headers/FlutterMacros.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/FlutterMacOS.framework/Versions/A/Headers/FlutterPlatformViews.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/FlutterMacOS.framework/Versions/A/Headers/FlutterPluginMacOS.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/FlutterMacOS.framework/Versions/A/Headers/FlutterPluginRegistrarMacOS.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/FlutterMacOS.framework/Versions/A/Headers/FlutterTexture.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/FlutterMacOS.framework/Versions/A/Headers/FlutterViewController.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/FlutterMacOS.framework/Versions/A/Modules/module.modulemap" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/FlutterMacOS.framework/Versions/A/Resources/Info.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/FlutterMacOS.framework/Versions/A/Resources/icudtl.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/FlutterMacOS.framework/Versions/A/_CodeSignature/CodeResources" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/FlutterMacOS.framework/Versions/Current" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/App.framework/App" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/App.framework/Resources" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/App.framework/Versions/A/App" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/App.framework/Versions/A/Resources/Info.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/App.framework/Versions/A/Resources/flutter_assets/AssetManifest.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/App.framework/Versions/A/Resources/flutter_assets/AssetManifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/App.framework/Versions/A/Resources/flutter_assets/FontManifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/App.framework/Versions/A/Resources/flutter_assets/NOTICES.Z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/App.framework/Versions/A/Resources/flutter_assets/assets/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/App.framework/Versions/A/Resources/flutter_assets/assets/person.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/App.framework/Versions/A/Resources/flutter_assets/fonts/MaterialIcons-Regular.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/App.framework/Versions/A/Resources/flutter_assets/isolate_snapshot_data" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/App.framework/Versions/A/Resources/flutter_assets/kernel_blob.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/App.framework/Versions/A/Resources/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/App.framework/Versions/A/Resources/flutter_assets/shaders/ink_sparkle.frag" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/App.framework/Versions/A/Resources/flutter_assets/vm_snapshot_data" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/App.framework/Versions/A/_CodeSignature/CodeResources" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/App.framework/Versions/Current" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/FlutterMacOS.framework/FlutterMacOS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/FlutterMacOS.framework/Resources" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/FlutterMacOS.framework/Versions/A/FlutterMacOS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/FlutterMacOS.framework/Versions/A/Resources/Info.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/FlutterMacOS.framework/Versions/A/Resources/icudtl.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/FlutterMacOS.framework/Versions/A/_CodeSignature/CodeResources" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/FlutterMacOS.framework/Versions/Current" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/libswiftAppKit.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/libswiftCore.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/libswiftCoreAudio.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/libswiftCoreData.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/libswiftCoreFoundation.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/libswiftCoreGraphics.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/libswiftCoreImage.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/libswiftCoreMedia.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/libswiftDarwin.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/libswiftDispatch.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/libswiftFoundation.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/libswiftIOKit.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/libswiftMetal.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/libswiftObjectiveC.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/libswiftQuartzCore.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/libswiftXPC.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/libswiftos.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Info.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/MacOS/app_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/PkgInfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Resources/AppIcon.icns" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Resources/Assets.car" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Resources/Base.lproj/MainMenu.nib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/_CodeSignature/CodeResources" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.swiftmodule/Project/x86_64-apple-macos.swiftsourceinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.swiftmodule/x86_64-apple-macos.abi.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.swiftmodule/x86_64-apple-macos.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.swiftmodule/x86_64-apple-macos.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Logs/Build/847984C2-AF65-4138-A808-BDC2AC5F889B.xcactivitylog" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Logs/Build/LogStoreManifest.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Logs/Launch/LogStoreManifest.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Logs/Localization/LogStoreManifest.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Logs/Package/LogStoreManifest.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/Logs/Test/LogStoreManifest.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/Accessibility-1C39AWPZ3ZCHS.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/Accessibility-1C39AWPZ3ZCHS.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/AppKit-2E52K8BLPXB98.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/AppKit-2E52K8BLPXB98.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/ApplicationServices-318ED6HVOOOWK.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/ApplicationServices-318ED6HVOOOWK.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/CFNetwork-2QM24TU1OUNU.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/CFNetwork-2QM24TU1OUNU.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/CUPS-JHNNNXXF1OP5.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/CUPS-JHNNNXXF1OP5.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/Cocoa-G0K7USNOMP8I.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/Cocoa-G0K7USNOMP8I.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/ColorSync-FUKP4SF5WDN.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/ColorSync-FUKP4SF5WDN.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/CoreAudio-1AA2PF9D9ZR1E.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/CoreAudio-1AA2PF9D9ZR1E.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/CoreAudioTypes-FBCZNCTK6GB0.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/CoreAudioTypes-FBCZNCTK6GB0.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/CoreData-3DC7JJOJKG7MT.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/CoreData-3DC7JJOJKG7MT.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/CoreFoundation-XRVNUAOWDGXL.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/CoreFoundation-XRVNUAOWDGXL.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/CoreGraphics-3T9VBW5GP5OQV.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/CoreGraphics-3T9VBW5GP5OQV.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/CoreImage-2CUH609RP6X7P.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/CoreImage-2CUH609RP6X7P.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/CoreMedia-37PVQTJTN9KQQ.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/CoreMedia-37PVQTJTN9KQQ.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/CoreServices-3FK4JMT7K1IRE.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/CoreServices-3FK4JMT7K1IRE.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/CoreText-2K5RVIO1QZLNS.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/CoreText-2K5RVIO1QZLNS.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/CoreTransferable-KM8905ZS9D06.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/CoreTransferable-KM8905ZS9D06.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/CoreVideo-1EDP4WMD3WVWL.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/CoreVideo-1EDP4WMD3WVWL.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/Darwin-14TRD15FCACV2.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/Darwin-14TRD15FCACV2.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/DeveloperToolsSupport-3H6S1A3Z3FZ2K.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/DeveloperToolsSupport-3H6S1A3Z3FZ2K.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/DiskArbitration-QK5Z60WO3GCK.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/DiskArbitration-QK5Z60WO3GCK.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/Dispatch-Y4ZZ1HR72FEI.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/Dispatch-Y4ZZ1HR72FEI.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/FlutterMacOS-34OGKYA8MVA64.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/FlutterMacOS-34OGKYA8MVA64.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/Foundation-2M8Y3D1H909LB.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/Foundation-2M8Y3D1H909LB.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/IOKit-1YJU4L4Q03Y5.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/IOKit-1YJU4L4Q03Y5.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/IOSurface-235Q4H9R8GAYU.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/IOSurface-235Q4H9R8GAYU.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/ImageIO-27XM1J7FM4Q7H.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/ImageIO-27XM1J7FM4Q7H.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/MachO-YWFNV22Z5VUT.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/MachO-YWFNV22Z5VUT.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/Metal-1B038G1N9AC0V.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/Metal-1B038G1N9AC0V.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/OSLog-3M0JBPYXURWPD.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/OSLog-3M0JBPYXURWPD.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/ObjectiveC-2C4A7FIGEFV6M.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/ObjectiveC-2C4A7FIGEFV6M.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/OpenGL-2YY2N6L4YVU9Y.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/OpenGL-2YY2N6L4YVU9Y.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/QuartzCore-KO6TAZ9XHBR8.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/QuartzCore-KO6TAZ9XHBR8.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/Security-3MRSRYU7H638B.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/Security-3MRSRYU7H638B.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/SwiftOverlayShims-39ZO3A1THQ3HL.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/SwiftOverlayShims-39ZO3A1THQ3HL.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/SwiftShims-39ZO3A1THQ3HL.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/SwiftShims-39ZO3A1THQ3HL.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/SwiftUI-2S15EMMJUOLMK.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/SwiftUI-2S15EMMJUOLMK.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/Symbols-1QNIPN3XYP8LO.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/Symbols-1QNIPN3XYP8LO.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/UniformTypeIdentifiers-2TQCH09YI5T7Y.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/UniformTypeIdentifiers-2TQCH09YI5T7Y.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/XPC-1O6EQOTZ7QBYA.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/XPC-1O6EQOTZ7QBYA.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/_Builtin_intrinsics-25OOTM0E7SZ3X.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/_Builtin_intrinsics-25OOTM0E7SZ3X.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/_Builtin_stddef_max_align_t-25OOTM0E7SZ3X.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/_Builtin_stddef_max_align_t-25OOTM0E7SZ3X.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/_SwiftConcurrencyShims-39ZO3A1THQ3HL.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/_SwiftConcurrencyShims-39ZO3A1THQ3HL.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/launch-1O6EQOTZ7QBYA.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/launch-1O6EQOTZ7QBYA.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/libDER-2YDAHEQ2C7FF0.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/libDER-2YDAHEQ2C7FF0.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/libkern-14TRD15FCACV2.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/libkern-14TRD15FCACV2.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/os-14TRD15FCACV2.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/os-14TRD15FCACV2.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/os_object-14TRD15FCACV2.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/os_object-14TRD15FCACV2.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/os_workgroup-14TRD15FCACV2.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/os_workgroup-14TRD15FCACV2.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/ptrauth-25OOTM0E7SZ3X.pcm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/3RD8R9RCIMOPZ/ptrauth-25OOTM0E7SZ3X.pcm.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/Accessibility-DBOVOXEHE2QD.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/AppKit-3QYT2BD11MO8W.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/Combine-150SUAZTVW2N7.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/CoreAudio-3GFLLB57QPSHX.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/CoreData-3TMQXHPTXA834.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/CoreFoundation-1KFMO74YGS5CJ.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/CoreGraphics-1RLKYL9H7S5PV.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/CoreImage-AOV0PKN09VT6.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/CoreMedia-7M76YPM4RK0J.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/CoreTransferable-OOZ0FVCW9S2T.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/Darwin-RT6LTHU96GKS.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/DeveloperToolsSupport-1K5RO3YBYGWON.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/Dispatch-1DW3Q8Z6N0NCC.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/Foundation-3IRV54EHUOMQN.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/IOKit-12NS3P9V1IGUC.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/Metal-38EVWFME8L1W2.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/OSLog-3ESF9948ZRS7L.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/ObjectiveC-XIPKEL3DAUV8.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/Observation-3JW1LV05ETOZV.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/QuartzCore-ISZDC1WKCQ2.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/Session.modulevalidation" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/Swift-2QIPT8ZAVH7N1.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/SwiftOnoneSupport-1ZXTDHNLOJNCB.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/SwiftUI-2U10HT01VNWF4.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/Symbols-LI3DNE08DXZG.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/UniformTypeIdentifiers-2M2NA4LX32HYP.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/XPC-2PLD5XQUIU6ON.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/_Concurrency-283KJWIS5MWP5.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/_StringProcessing-2REMMW6B1B31X.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/modules.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/os-1FJCNXOBFB2KK.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/SDKStatCaches.noindex/macosx14.0-23A334-4a76ee93ef69e462914ffe9883de22b8.sdkstatcache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/macos/info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/a46f85df11ed3d278105635939097b84.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/a46f85df11ed3d278105635939097b84.cache.dill.track.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Flutter Assemble.build/InputFileList-33CC111E2044C6BF0003C045-FlutterInputs-544e4395750787fc346b40c7e102f14a-resolved.xcfilelist" beforeDir="false" afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Flutter Assemble.build/InputFileList-33CC111E2044C6BF0003C045-FlutterInputs-544e4395750787fc346b40c7e102f14a-resolved.xcfilelist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Flutter Assemble.build/OutputFileList-33CC111E2044C6BF0003C045-FlutterOutputs-a44224a7e6265df1ff4dec59abebe94d-resolved.xcfilelist" beforeDir="false" afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Flutter Assemble.build/OutputFileList-33CC111E2044C6BF0003C045-FlutterOutputs-a44224a7e6265df1ff4dec59abebe94d-resolved.xcfilelist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/DerivedSources/app_1-Swift.h" beforeDir="false" afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/DerivedSources/app_1-Swift.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/SwiftStdLibToolInputDependencies.dep" beforeDir="false" afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/Runner.build/Debug/Runner.build/SwiftStdLibToolInputDependencies.dep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/build.db" beforeDir="false" afterPath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/build.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/attachments/1b7ac61b8ecc62c8e69b213f182eca6b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/attachments/4a4d8b323fb25206fc5fb1b1de712166" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/attachments/67e76468a8cd78f03ef5535f8fd0ab00" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/attachments/76f496b0841e3e41820ee9db6a93f46d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/attachments/7e35e30dd7907e966c37030d49c2e689" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/attachments/8bba4233626f64a7ea772bb94a08a1a9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/attachments/9b9312fcfd6614de55b80fcaa4378dc4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/attachments/d41d8cd98f00b204e9800998ecf8427e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/attachments/d9aa8fac8b3d87c1a3d5954eb979b71f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/attachments/dd1658b7275676660fb466feae65cfe1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/attachments/f0d4f359dd79bfaa6945ee0962a398f3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/attachments/fd8314defc70a8778956f026c0ddfd19" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/build-request.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/description.msgpack" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/target-graph.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/macos/Build/Intermediates.noindex/XCBuildData/c69fa237023f0784bb39ef50dcc54d08.xcbuilddata/task-store.msgpack" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/macos/Build/Products/Debug/.last_build_id" beforeDir="false" afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/.last_build_id" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/macos/Build/Products/Debug/App.framework/Versions/A/App" beforeDir="false" afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/App.framework/Versions/A/App" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/macos/Build/Products/Debug/FlutterMacOS.framework/Versions/A/FlutterMacOS" beforeDir="false" afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/FlutterMacOS.framework/Versions/A/FlutterMacOS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/App.framework/Versions/A/App" beforeDir="false" afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/App.framework/Versions/A/App" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/FlutterMacOS.framework/Versions/A/FlutterMacOS" beforeDir="false" afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Frameworks/FlutterMacOS.framework/Versions/A/FlutterMacOS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/MacOS/app_1" beforeDir="false" afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/MacOS/app_1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Resources/Assets.car" beforeDir="false" afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/Resources/Assets.car" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/macos/Build/Products/Debug/app_1.app/Contents/_CodeSignature/CodeResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/Session.modulevalidation" beforeDir="false" afterPath="$PROJECT_DIR$/build/macos/ModuleCache.noindex/Session.modulevalidation" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/macos/SDKStatCaches.noindex/macosx14.0-23A334-4a76ee93ef69e462914ffe9883de22b8.sdkstatcache" beforeDir="false" afterPath="$PROJECT_DIR$/build/macos/SDKStatCaches.noindex/macosx14.0-23A334-4a76ee93ef69e462914ffe9883de22b8.sdkstatcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/macos/info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/build/macos/info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Global/global.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Global/global.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Login/loginpage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Login/loginpage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Login/registration.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Login/registration.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/member.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -361,6 +60,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../../meetmate/flutter/bin/cache/dart-sdk/lib/ffi/ffi.dart" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2YTpAobk60gGNyhQPik9GJABsvw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
@@ -370,20 +72,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="show.migrate.to.gradle.popup" value="false" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cidr.known.project.marker": "true",
+    "com.google.services.firebase.aqiPopupShown": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "io.flutter.reload.alreadyRun": "true",
+    "last_opened_file_path": "/Users/Heily/Desktop/2023_SE_MeetMate/Client",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "show.migrate.to.gradle.popup": "false"
+  }
+}]]></component>
   <component name="ReaderModeSettings">
     <option name="enabled" value="false" />
   </component>

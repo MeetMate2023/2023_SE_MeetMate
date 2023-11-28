@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:dio/dio.dart';
 
 Dio dio =Dio(); // http통신을 위한 Dio객체 생성
-String baseUrl = "https://fond-stinkbug-simply.ngrok-free.app"; // 서버 baseUrl
+String baseUrl = "http://127.0.0.1:8080"; // 서버 baseUrl
 
 class User{ // 유저 정보 저장
   late String User_Local ='';
