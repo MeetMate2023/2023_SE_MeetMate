@@ -67,8 +67,9 @@ class _AroundState extends State<Around> {
                 } else if (snapshot.hasError) {
                   return Center(child: Text('에러: ${snapshot.error}'));
                 } else {
-                  List<Map<String, dynamic>> dataList =
+                  dataList =
                   snapshot.data as List<Map<String, dynamic>>;
+                  print(dataList);
                   return SingleChildScrollView(
                     child: Column(
                       children: [

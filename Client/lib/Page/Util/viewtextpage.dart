@@ -133,8 +133,10 @@ class _ViewtextState extends State<Viewtext> {
     super.initState();
     _scrollController = ScrollController();
     futureData = fetchData();
-    print(dataList[widget.index]['title']);
-    print(dataList[widget.index]['content'].substring(0, 10));
+
+
+    print(dataList.toString());
+
   }
 
   final commentController = TextEditingController();
@@ -144,6 +146,7 @@ class _ViewtextState extends State<Viewtext> {
     final options = {
       "articleId": dataList[widget.index]['id'],
     };
+    print(dataList.toString());
     print(options);
     try {
       Response result = await dio.post("$baseUrl/comment/list", data: options);
@@ -245,7 +248,6 @@ class _ViewtextState extends State<Viewtext> {
       // You can perform additional actions based on the selected value
     }
   }
-
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
@@ -479,6 +481,9 @@ class _ViewtextState extends State<Viewtext> {
                     width: MediaQuery.of(context).size.width * 0.85,
                     height: 50,
                     child: TextField(
+                      onTap: (){
+                        print(dataList.toString());
+                      },
                       decoration:
                           InputDecoration(hintText: "댓글을 입력하세요...(20자 이내)"),
                       controller: commentController,

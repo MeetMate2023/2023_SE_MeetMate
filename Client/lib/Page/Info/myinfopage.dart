@@ -1,7 +1,3 @@
-import 'package:app_1/Page/Calender/calender.dart';
-import 'package:app_1/Page/Around/findaround.dart';
-import 'package:app_1/Page/Home/homepage.dart';
-import 'package:app_1/Page/Info/myinfopage.dart';
 import 'package:app_1/AppBar/appbar.dart';
 import 'package:app_1/Global/global.dart';
 import 'package:app_1/Page/Util/userchangeinfo.dart';

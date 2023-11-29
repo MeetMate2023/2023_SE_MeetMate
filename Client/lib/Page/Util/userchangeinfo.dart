@@ -1,11 +1,8 @@
 import 'package:app_1/Global/global.dart';
 import 'package:app_1/Page/Info/myinfopage.dart';
 import 'package:flutter/material.dart';
-
 import '../../Global/hobbylist.dart';
 import '../../Global/koreanlocal.dart';
-import '../../Login/loginpage.dart';
-import '../Home/homepage.dart';
 
 class User_mo extends StatefulWidget {
   const User_mo({super.key});

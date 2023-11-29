@@ -1,5 +1,3 @@
-import 'package:app_1/Page/Around/findaround.dart';
-import 'package:app_1/Page/Info/myinfopage.dart';
 import 'package:app_1/AppBar/appbar.dart';
 import 'package:app_1/Page/Util/writepage.dart';
 import 'package:app_1/Global/global.dart';

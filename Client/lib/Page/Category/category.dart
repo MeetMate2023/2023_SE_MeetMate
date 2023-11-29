@@ -1,11 +1,10 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-
 import '../../AppBar/appbar.dart';
 import '../../AppBar/bottomappbar.dart';
 import '../../Global/global.dart';
 import '../Util/viewtextpage.dart';
-import '../Util/writepage.dart';
+
 
 class Category extends StatefulWidget {
   const Category({super.key});
@@ -66,7 +65,7 @@ class _CategoryState extends State<Category> {
             } else if (snapshot.hasError) {
               return Center(child: Text('에러: ${snapshot.error}'));
             } else {
-              List<Map<String, dynamic>> dataList =
+              dataList =
                   snapshot.data as List<Map<String, dynamic>>;
               return SingleChildScrollView(
                 child: Column(

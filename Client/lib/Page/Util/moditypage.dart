@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
 import '../../Global/global.dart';
 import '../../Global/hobbylist.dart';
 import '../../Global/koreanlocal.dart';
