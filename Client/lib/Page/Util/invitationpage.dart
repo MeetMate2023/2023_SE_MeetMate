@@ -57,12 +57,12 @@ class _InvitationState extends State<Invitation> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(child: Scaffold(
-      appBar: AppBar(title: Text('초대장 보기')),
+      appBar: AppBar(title: Text('My Invitations', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),), toolbarHeight: 80,),
       body: Center(
         child: Container(
-          height: MediaQuery.of(context).size.height * 0.85,
+          height: MediaQuery.of(context).size.height * 0.8,
           width: MediaQuery.of(context).size.width * 0.9,
-          decoration: BoxDecoration(border: Border.all(color: Colors.black)),
+          decoration: BoxDecoration(border: Border.all(color: Colors.grey)),
           child: SingleChildScrollView(
             child: Column(
               children: [

@@ -53,7 +53,7 @@ class _PickState extends State<Pick> with SingleTickerProviderStateMixin {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-            appBar: AppBar(title: Text('취미선택'),actions: [
+            appBar: AppBar(title: Text('취미 선택'),actions: [
               ElevatedButton(onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) => Local(),));
 
