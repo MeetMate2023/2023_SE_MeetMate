@@ -3,10 +3,8 @@ package member.article.repository.entity;
 import jakarta.persistence.*;
 import lombok.*;
 import member.Member.repository.entity.Member;
-import member.comment.repository.entity.Comment;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 @Entity
 @Builder
@@ -23,7 +21,7 @@ public class Article {
     private String title;
     private String content;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "nickname", referencedColumnName = "nickname")
     private Member nickname;
 

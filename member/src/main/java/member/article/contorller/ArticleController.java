@@ -7,6 +7,7 @@ import member.Member.repository.entity.Member;
 import member.Member.service.MemberService;
 import member.article.contorller.dto.UploadRequest;
 import member.article.repository.entity.Article;
+import member.article.repository.entity.ArticleDTO;
 import member.article.service.ArticleService;
 import org.hibernate.mapping.Join;
 import org.springframework.http.ResponseEntity;
@@ -43,7 +44,7 @@ public class ArticleController {
     public boolean upload(@RequestBody UploadRequest uploadRequest){return articleService.upload(uploadRequest);
     }
     @PostMapping("/article/list")
-    public List<Article> getArticleList() {
+    public List<ArticleDTO> getArticleList() {
         return articleService.getArticleList();
     }
 

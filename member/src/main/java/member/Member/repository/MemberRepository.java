@@ -15,5 +15,6 @@ public interface MemberRepository extends JpaRepository<Member, Long> {
 
     @Modifying
     int deleteByUid(String uid);
+
 }
 
