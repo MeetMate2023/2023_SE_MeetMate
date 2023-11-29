@@ -20,11 +20,11 @@ public class Comment {
     @Column(columnDefinition = "TEXT", nullable = false)
     String content;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "articleId")
     private Article article;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "nickname", referencedColumnName = "nickname")
     private Member member; // 작성자
 }

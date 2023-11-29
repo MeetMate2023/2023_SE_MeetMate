@@ -1,11 +1,10 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-
 import '../../AppBar/appbar.dart';
 import '../../AppBar/bottomappbar.dart';
 import '../../Global/global.dart';
 import '../Util/viewtextpage.dart';
-import '../Util/writepage.dart';
+
 
 class Category extends StatefulWidget {
   const Category({super.key});
@@ -109,10 +108,11 @@ class _CategoryState extends State<Category> {
                               ],
                             ),
                             onTap: () {
+                             print(dataList.toString());
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => Viewtext(index: index),
+                                  builder: (context) => Viewtext(index: index,dataList: dataList),
                                 ),
                               );
                             },

@@ -38,7 +38,7 @@ class _LoginState extends State<Login> {
     if (ID.text.isEmpty || Password.text.isEmpty) {
       print(ID.text);
       print(Password.text);
-      return;
+      _showDialog(context); // 완료 못하면 경고창
     } // 로그인 시 빈 필드가 존재하는지  검사
 
     final options = {

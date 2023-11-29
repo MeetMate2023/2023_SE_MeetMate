@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
 import 'package:table_calendar/table_calendar.dart';
 
 import '../../Global/global.dart';
@@ -59,51 +58,53 @@ class _CalenderState extends State<Calender> {
         )
       ],
       ),
-      body: Column(
-        children: [
-          TableCalendar(
-            firstDay: DateTime.utc(2020, 1, 1),
-            lastDay: DateTime.utc(2050, 12, 30),
-            focusedDay: _focusedDay,
-            selectedDayPredicate: (day) {
-              return isSameDay(_selectedDay, day);
-            },
-            onDaySelected: (selectedDay, focusedDay) {
-              setState(() {
-                _selectedDay = selectedDay;
-                _focusedDay = focusedDay;
-                _getEvent();
-              });
-            },
-            eventLoader: _getEventsForDay,
-          ),
-          SizedBox(
-            width: MediaQuery.of(context).size.width*2,
-            height: MediaQuery.of(context).size.height * 0.6,
-            child: Column(
-              children: [
-                DataTable(
-                  columns: [
-                    DataColumn(label: Text('시간')),
-                    DataColumn(label: Text('내용')),
-                    DataColumn(label: Text('위치')),
-                  ],
-                  rows: eventtext.map((text) {
-                    List<String> splitText = text.split(" ");
-                    String time = splitText[0];
-                    String content = splitText[1];
-                    String local = splitText[2];
-                    return DataRow(cells: [
-                      DataCell(Text(time)),
-                      DataCell(Text(content)),
-                      DataCell(Text(local)),
-                    ]);
-                  }).toList(),
-                ),
-              ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            TableCalendar(
+              firstDay: DateTime.utc(2020, 1, 1),
+              lastDay: DateTime.utc(2050, 12, 30),
+              focusedDay: _focusedDay,
+              selectedDayPredicate: (day) {
+                return isSameDay(_selectedDay, day);
+              },
+              onDaySelected: (selectedDay, focusedDay) {
+                setState(() {
+                  _selectedDay = selectedDay;
+                  _focusedDay = focusedDay;
+                  _getEvent();
+                });
+              },
+              eventLoader: _getEventsForDay,
             ),
-          ),
-        ],
+            SizedBox(
+              width: MediaQuery.of(context).size.width*2,
+              height: MediaQuery.of(context).size.height * 0.6,
+              child: Column(
+                children: [
+                  DataTable(
+                    columns: [
+                      DataColumn(label: Text('시간')),
+                      DataColumn(label: Text('내용')),
+                      DataColumn(label: Text('위치')),
+                    ],
+                    rows: eventtext.map((text) {
+                      List<String> splitText = text.split(" ");
+                      String time = splitText[0];
+                      String content = splitText[1];
+                      String local = splitText[2];
+                      return DataRow(cells: [
+                        DataCell(Text(time)),
+                        DataCell(Text(content)),
+                        DataCell(Text(local)),
+                      ]);
+                    }).toList(),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

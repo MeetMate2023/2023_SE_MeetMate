@@ -1,4 +1,3 @@
-import 'package:app_1/Page/Util/Search_1_page.dart';
 import 'package:app_1/Page/Around/findaround.dart';
 import 'package:app_1/Page/Home/homepage.dart';
 import 'package:app_1/Page/Info/myinfopage.dart';
@@ -70,6 +69,7 @@ class _AroundState extends State<Around> {
                 } else {
                   List<Map<String, dynamic>> dataList =
                   snapshot.data as List<Map<String, dynamic>>;
+                  print(dataList);
                   return SingleChildScrollView(
                     child: Column(
                       children: [
@@ -114,7 +114,7 @@ class _AroundState extends State<Around> {
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                      builder: (context) => Viewtext(index: index),
+                                      builder: (context) => Viewtext(index: index,dataList: dataList),
                                     ),
                                   );
                                 },

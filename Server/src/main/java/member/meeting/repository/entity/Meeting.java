@@ -9,6 +9,8 @@ import member.article.repository.entity.Article;
 @Builder
 @Getter
 @NoArgsConstructor
+@Table(name = "Meeting")
+
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class Meeting {
     //id, nickname, title, meetTime, location, category, chat

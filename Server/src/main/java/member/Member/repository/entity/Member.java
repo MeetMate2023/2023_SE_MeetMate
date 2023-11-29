@@ -11,6 +11,7 @@ import java.time.LocalDateTime;
 @Setter
 @Getter
 @NoArgsConstructor
+@Table(name = "Member")
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class Member {
 

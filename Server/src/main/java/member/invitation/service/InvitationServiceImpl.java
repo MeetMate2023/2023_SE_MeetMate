@@ -12,12 +12,9 @@ import member.invitation.repository.InvitationRepository;
 import member.invitation.repository.entity.Invitation;
 import member.meeting.repository.MeetingRepository;
 import member.meeting.repository.entity.Meeting;
-import member.meeting.service.MeetingService;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
@@ -51,7 +48,7 @@ public class InvitationServiceImpl implements InvitationService{
         for(Invitation invitation : invite){
             long id = invitation.getId();
             String title = invitation.getArticle().getTitle();
-            String nickname = invitation.getArticle().getNickname();
+            String nickname = invitation.getArticle().getNickname().getNickname();
             String local = invitation.getArticle().getLocation();
             String meetTime = invitation.getArticle().getMeetTime();
             String category = invitation.getArticle().getCategory();

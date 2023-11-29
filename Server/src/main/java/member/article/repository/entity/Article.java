@@ -2,16 +2,16 @@ package member.article.repository.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
-import member.comment.repository.entity.Comment;
+import member.Member.repository.entity.Member;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 @Entity
 @Builder
 @Getter
 @Setter
 @NoArgsConstructor
+@Table(name = "Article")
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class Article {
     @Id
@@ -20,7 +20,11 @@ public class Article {
 
     private String title;
     private String content;
-    private String nickname;
+
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "nickname", referencedColumnName = "nickname")
+    private Member nickname;
+
     private String category;
     private String location;
     private String meetTime;
