@@ -20,7 +20,7 @@ class _LoginState extends State<Login> {
         barrierDismissible: false,
         builder: (BuildContext ctx) {
           return AlertDialog(
-            title: const Text('오류'),
+            title: const Text('존재하지 않는 회원입니다.'),
             content: const Text('아이디 또는 비밀번호를 확인해 주세요.'),
             actions: [
               TextButton(
