@@ -19,27 +19,28 @@ public class ArticleServiceImpl implements ArticleService{
     private final MemberRepository memberRepository;
 
     public boolean upload(UploadRequest uploadRequest){
-        Article article = Article.builder()
+        //
+        Member nickname = memberRepository.findByNickname(uploadRequest.getNickname());
+
+         Article article = Article.builder()
                 .title(uploadRequest.getTitle())
                 .category(uploadRequest.getCategory())
                 .content(uploadRequest.getContent())
                 .location(uploadRequest.getLocation())
                 .upload_time(LocalDateTime.now())
-                .nickname(uploadRequest.getNickname())
+                .nickname(nickname)
                 .chat(uploadRequest.getChat())
                 .meetTime(uploadRequest.getMeetTime())
                 .build();
-
         articleRepository.save(article);
 
-        Member member = memberRepository.findByNickname(uploadRequest.getNickname());
-        member.setDailyPostCount(member.getDailyPostCount() + 1);
-        member.setLastPostDate(LocalDateTime.now());
-        memberRepository.save(member);
+        nickname.setLastPostDate(LocalDateTime.now());
+        memberRepository.save(nickname);
         return true;
     }
     public List<Article> getArticleList() {
-        return articleRepository.findAll();
+        
+        return null;
     }
 
     public boolean edit(UploadRequest uploadRequest) {

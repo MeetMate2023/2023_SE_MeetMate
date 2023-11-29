@@ -2,6 +2,7 @@ package member.article.repository.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
+import member.Member.repository.entity.Member;
 import member.comment.repository.entity.Comment;
 
 import java.time.LocalDateTime;
@@ -12,6 +13,7 @@ import java.util.List;
 @Getter
 @Setter
 @NoArgsConstructor
+@Table(name = "Article")
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class Article {
     @Id
@@ -20,7 +22,11 @@ public class Article {
 
     private String title;
     private String content;
-    private String nickname;
+
+    @ManyToOne
+    @JoinColumn(name = "nickname", referencedColumnName = "nickname")
+    private Member nickname;
+
     private String category;
     private String location;
     private String meetTime;
