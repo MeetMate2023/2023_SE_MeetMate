@@ -5,7 +5,6 @@ import '../Util/viewtextpage.dart';
 
 class Search extends StatefulWidget {
   final String h;
-
   const Search({required this.h});
 
   @override
@@ -59,7 +58,7 @@ class _SearchState extends State<Search> {
           } else if (snapshot.hasError) {
             return Center(child: Text('에러: ${snapshot.error}'));
           } else {
-            dataList = snapshot.data as List<Map<String, dynamic>>;
+            List<Map<String, dynamic>> dataList = snapshot.data as List<Map<String, dynamic>>;
             return SingleChildScrollView(
               child: Column(
                 children: [
@@ -103,7 +102,7 @@ class _SearchState extends State<Search> {
                               context,
                               MaterialPageRoute(
                                 builder: (context) =>
-                                    Viewtext(index: index),
+                                    Viewtext(index: index,dataList: dataList),
                               ),
                             );
                           },

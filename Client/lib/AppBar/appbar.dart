@@ -3,7 +3,6 @@ import 'package:app_1/Page/Admin/adminpage.dart';
 import 'package:app_1/Global/global.dart';
 import 'package:app_1/Page/Util/invitationpage.dart';
 import 'package:flutter/material.dart';
-
 import '../Page/Search/Search_1_page.dart';
 
 //상단 AppBar
