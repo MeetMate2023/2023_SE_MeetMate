@@ -14,4 +14,6 @@ public interface MemberService {
 
     boolean delete(JoinRequest joinRequest);
     List<String>all_user_list();
+
+    boolean update(JoinRequest joinRequest);
 }

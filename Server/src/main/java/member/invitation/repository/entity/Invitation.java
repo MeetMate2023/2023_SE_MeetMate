@@ -16,7 +16,7 @@ public class Invitation {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
+    private Long id; // id 필드 추가
 
     @ManyToOne
     @JoinColumn(name = "articleId")
@@ -24,9 +24,11 @@ public class Invitation {
 
     @ManyToOne
     @JoinColumn(name = "sender", referencedColumnName = "nickname")
-    private Member sender; // 작성자
+    private Member sender; // 글 작성자
 
     @ManyToOne
     @JoinColumn(name = "receiver", referencedColumnName = "nickname")
-    private Member receiver; // 작성자
+    private Member receiver; // 댓글 작성자
+
+    private boolean permit;
 }

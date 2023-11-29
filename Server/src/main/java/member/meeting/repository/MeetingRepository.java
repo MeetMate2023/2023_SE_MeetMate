@@ -1,8 +1,12 @@
 package member.meeting.repository;
 
+import member.Member.repository.entity.Member;
+import member.meeting.controller.dto.MeetingRequest;
 import member.meeting.repository.entity.Meeting;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public class MeetingRepository  {
+import java.util.List;
 
+public interface MeetingRepository extends JpaRepository<Meeting,Long> {
+    List<Meeting> findByMember_Nickname(String nickname);
 }

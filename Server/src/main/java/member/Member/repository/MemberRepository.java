@@ -8,10 +8,10 @@ import java.util.Optional;
 
 public interface MemberRepository extends JpaRepository<Member, Long> {
     Member getMemberByUid(String uid);
+
     Member getMemberByNickname(String nickname);
     //Optional<Member> findByNickname(String nickname);
     Member findByNickname(String nickname);
-
 
     @Modifying
     int deleteByUid(String uid);
