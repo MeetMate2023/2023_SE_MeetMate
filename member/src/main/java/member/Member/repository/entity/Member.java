@@ -14,21 +14,15 @@ import java.time.LocalDateTime;
 @Table(name = "Member")
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class Member {
-
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    private boolean company_check; // 1이면 기업, 0이면 유저
+    private String nickname;
     private String uid;
     private String password;
     private String name;
-    private String nickname;
     private String local;
     private String hobby;
-    private int dailyPostCount;
-
     private LocalDateTime joinday;
-
+    private int dailyPostCount;
     private LocalDateTime lastPostDate;
+    private boolean company_check; // 1이면 기업, 0이면 유저
 }
