@@ -1,4 +1,4 @@
-#Fri Dec 01 18:09:15 KST 2023
-base.0=C\:\\Users\\acslab3\\AndroidStudioProjects\\Client\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+#Fri Dec 01 20:21:59 KST 2023
+base.0=C\:\\Users\\jmk10\\StudioProjects\\Client\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
