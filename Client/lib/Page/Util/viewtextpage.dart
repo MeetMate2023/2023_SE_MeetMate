@@ -210,7 +210,7 @@ class _ViewtextState extends State<Viewtext> with AutomaticKeepAliveClientMixin 
               "nickname" : reviewList[index]['nickname'],
             };
             print(options);
-            dio.post("$baseUrl/member/profil  ;e",data: options).then((value){
+            dio.post("$baseUrl/member/profile",data: options).then((value){
               print(value.data);
               Navigator.push(
                 context,

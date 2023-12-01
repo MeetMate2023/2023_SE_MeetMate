@@ -120,6 +120,7 @@ class _ModifyState extends State<Modify> {
       return;
     }
     final options = {
+      "id" : widget.dataList[widget.index]['id'],
       "title": title_controller.text,
       "nickname": user.User_Nic,
       "category": selectedSubCategory,
