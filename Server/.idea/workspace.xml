@@ -5,49 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37a861c9-7b14-4366-a9d9-51af096f6530" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Client/.dart_tool/flutter_build/0c2a80b4faab7b6c34a31ba71b52607f/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.dart_tool/flutter_build/0c2a80b4faab7b6c34a31ba71b52607f/.filecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/.dart_tool/flutter_build/0c2a80b4faab7b6c34a31ba71b52607f/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.dart_tool/flutter_build/0c2a80b4faab7b6c34a31ba71b52607f/app.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/.dart_tool/flutter_build/0c2a80b4faab7b6c34a31ba71b52607f/debug_macos_bundle_flutter_assets.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.dart_tool/flutter_build/0c2a80b4faab7b6c34a31ba71b52607f/debug_macos_bundle_flutter_assets.stamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/.dart_tool/flutter_build/0c2a80b4faab7b6c34a31ba71b52607f/flutter_assets.d" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.dart_tool/flutter_build/0c2a80b4faab7b6c34a31ba71b52607f/flutter_assets.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/.dart_tool/flutter_build/0c2a80b4faab7b6c34a31ba71b52607f/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.dart_tool/flutter_build/0c2a80b4faab7b6c34a31ba71b52607f/kernel_snapshot.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/.dart_tool/flutter_build/0c2a80b4faab7b6c34a31ba71b52607f/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.dart_tool/flutter_build/0c2a80b4faab7b6c34a31ba71b52607f/kernel_snapshot.stamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.dart_tool/package_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.dart_tool/package_config_subset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/build/a46f85df11ed3d278105635939097b84.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/build/a46f85df11ed3d278105635939097b84.cache.dill.track.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/lib/Global/global.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/lib/Global/global.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a6c2980b-4e61-41c5-b293-459adc151603.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a6c2980b-4e61-41c5-b293-459adc151603.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/member.iml" beforeDir="false" afterPath="$PROJECT_DIR$/member.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/member/Member/repository/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/member/Member/repository/MemberRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/member/Member/repository/entity/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/member/Member/repository/entity/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/member/article/repository/entity/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/member/article/repository/entity/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/member/comment/repository/entity/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/member/comment/repository/entity/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/member/comment/service/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/member/comment/service/CommentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/member/invitation/repository/entity/Invitation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/member/invitation/repository/entity/Invitation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/member/meeting/repository/entity/Meeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/member/meeting/repository/entity/Meeting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/member/Member/repository/entity/Member$MemberBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/member/Member/repository/entity/Member$MemberBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/member/Member/repository/entity/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/member/Member/repository/entity/Member.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/member/article/contorller/ArticleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/member/article/contorller/ArticleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/member/article/repository/entity/Article$ArticleBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/member/article/repository/entity/Article$ArticleBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/member/article/repository/entity/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/member/article/repository/entity/Article.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/member/article/repository/entity/ArticleDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/member/article/repository/entity/ArticleDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/member/article/service/ArticleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/member/article/service/ArticleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/member/article/service/ArticleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/member/article/service/ArticleServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/member/comment/repository/entity/Comment$CommentBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/member/comment/repository/entity/Comment$CommentBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/member/comment/repository/entity/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/member/comment/repository/entity/Comment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/member/comment/service/CommentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/member/comment/service/CommentServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/member/invitation/repository/entity/Invitation$InvitationBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/member/invitation/repository/entity/Invitation$InvitationBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/member/invitation/repository/entity/Invitation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/member/invitation/repository/entity/Invitation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/member/meeting/repository/entity/Meeting$MeetingBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/member/meeting/repository/entity/Meeting$MeetingBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/member/meeting/repository/entity/Meeting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/member/meeting/repository/entity/Meeting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/member/Member/controller/dto/JoinRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/member/Member/controller/dto/JoinRequest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +76,7 @@
       <workItem from="1701339874772" duration="1992000" />
       <workItem from="1701342514076" duration="248000" />
       <workItem from="1701407405429" duration="375000" />
+      <workItem from="1701416919013" duration="5141000" />
     </task>
     <servers />
   </component>
