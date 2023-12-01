@@ -13,6 +13,18 @@ public class MemberRepositoryTest {
 
     @Test
     public void crudTest(){
-
+//        Member member = Member.builder()
+//                .ID("qwer123")
+//                .password("1234")
+//                .name("홍길동")
+//                .nicname("joa")
+//                .local("daegu")
+//                .hobby("exercise, music")
+//                .build();
+//                //create Test
+//        memberRepository.save(member);
+//
+//        //get test
+//        Member foundMember = memberRepository.findById(1L).get();
     }
 }

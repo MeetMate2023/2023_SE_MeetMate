@@ -13,11 +13,8 @@ MeetMate 클라이언트를 실행하기 전에 다음 사항이 확인되어야
 1. 서버의 동작 확인
    - MeetMate 서버가 정상적으로 동작 중이어야 합니다.
    - 서버가 실행되고 있지 않다면 해당 서버 코드를 IDE를 통해 실행하거나 jar 파일을 Terminal을 통해 실행되어야 합니다.
+   - [go to Server Directory](https://github.com/MeetMate2023/2023_SE_MeetMate/blob/f940b9f4ef97f548e4940662b7cb04abf7ff87d8/Server/README.md)
 2. APK 파일 설치
-   - Meetmate는 모바일에서 작동하며, 이를 위해 모바일 기기에 apk 파일이 설치되어야 합니다.
-
-
-### Usage
-- 관심 분야를 기준으로 커뮤니티 게시물을 살펴볼 수 있습니다.
-- 자신이 관심 있는 취미 모임을 추천 받을 수 있습니다.
-- 직접 모임에 참가하거나 개설하고 커뮤니티에 참여할 수 있습니다.
+   - Meetmate는 모바일에서 작동하며, 이를 위해 모바일 기기에 apk 파일이 설치되어야 합니다. 
+   - [Download APK file](https://github.com/MeetMate2023/2023_SE_MeetMate/raw/main/Client/build/app/outputs/flutter-apk/app-release.apk)
+   - [go to app-release.apk](https://github.com/MeetMate2023/2023_SE_MeetMate/blob/main/Client/build/app/outputs/flutter-apk/app-release.apk)
