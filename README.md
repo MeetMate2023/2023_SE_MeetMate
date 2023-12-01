@@ -10,8 +10,8 @@
 ### 
 프로젝트는 'Server', 'Client', 'Documents' 디렉토리로 구성되어 있으며 'Server', 'Client'에 해당하는 사용법은 각 폴더 안에 있습니다.
 
-- [Server](https://github.com/MeetMate2023/2023_SE_MeetMate/tree/main/Client)
-- [Client](https://github.com/MeetMate2023/2023_SE_MeetMate/tree/main/Server)
+- [Server](https://github.com/MeetMate2023/2023_SE_MeetMate/tree/main/Server)
+- [Client](https://github.com/MeetMate2023/2023_SE_MeetMate/tree/main/Client)
 - [Documents](https://github.com/MeetMate2023/2023_SE_MeetMate/tree/main/Documents)
 
 
