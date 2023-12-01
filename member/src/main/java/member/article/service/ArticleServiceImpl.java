@@ -1,5 +1,6 @@
 package member.article.service;
 
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import member.Member.repository.MemberRepository;
 import member.Member.repository.entity.Member;
@@ -21,7 +22,7 @@ public class ArticleServiceImpl implements ArticleService{
     private final MemberRepository memberRepository;
 
     public boolean upload(UploadRequest uploadRequest){
-        //
+
         Member nickname = memberRepository.findByNickname(uploadRequest.getNickname());
 
          Article article = Article.builder()
@@ -35,7 +36,7 @@ public class ArticleServiceImpl implements ArticleService{
                 .meetTime(uploadRequest.getMeetTime())
                 .build();
         articleRepository.save(article);
-
+        nickname.setDailyPostCount(nickname.getDailyPostCount()+1);
         nickname.setLastPostDate(LocalDateTime.now());
         memberRepository.save(nickname);
         return true;
@@ -87,16 +88,17 @@ public class ArticleServiceImpl implements ArticleService{
             return false;
         }
     }
-
+    @Transactional
     public boolean delete(UploadRequest uploadRequest){
         Long id = uploadRequest.getId();
         // 기존 게시글을 ID를 기반으로 찾아온다.
         Optional<Article> existingArticleOptional = articleRepository.findById(id);
-        //Member member = memberRepository.findByNickname();
+        Member nickname = memberRepository.findByNickname(uploadRequest.getNickname());
         if (existingArticleOptional.isPresent()) {
             // 게시글이 존재하면 삭제
             articleRepository.deleteById(id);
-            //member.setDailyPostCount(member.getDailyPostCount()-1);
+            nickname.setDailyPostCount(nickname.getDailyPostCount()-1);
+            memberRepository.save(nickname);
             return true;
         } else {
             return false;

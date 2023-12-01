@@ -6,6 +6,7 @@ import lombok.RequiredArgsConstructor;
 import member.Member.controller.dto.JoinRequest;
 import member.Member.repository.MemberRepository;
 import member.Member.repository.entity.Member;
+import member.Member.repository.entity.MemberDTO;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -84,5 +85,13 @@ public class MemberServiceImpl implements MemberService {
         return true; // 업데이트 성공
 
 
+    }
+    public MemberDTO send_profile(JoinRequest joinRequest){
+        Member member = memberRepository.findByNickname(joinRequest.getNickname());
+        String nickname = member.getNickname();
+        String local = member.getLocal();
+        String hobby = member.getHobby();
+        System.out.println("test : " + nickname + " : " + local + " " + hobby);
+        return new MemberDTO(nickname, local, hobby);
     }
 }

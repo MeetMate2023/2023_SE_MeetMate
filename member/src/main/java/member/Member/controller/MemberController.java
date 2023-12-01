@@ -3,6 +3,7 @@ package member.Member.controller;
 import lombok.RequiredArgsConstructor;
 import member.Member.controller.dto.JoinRequest;
 import member.Member.repository.entity.Member;
+import member.Member.repository.entity.MemberDTO;
 import member.Member.service.MemberService;
 import org.hibernate.mapping.Join;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -52,4 +53,7 @@ public class MemberController {
     public List<String> all_user_list(){
         return memberService.all_user_list();
     }
+    //닉네임 받고, 닉네임 위치 취미
+    @PostMapping("/member/profile")
+    public MemberDTO send_profile(@RequestBody JoinRequest joinRequest){return memberService.send_profile(joinRequest);}
 }

@@ -2,6 +2,7 @@ package member.Member.service;
 
 import member.Member.controller.dto.JoinRequest;
 import member.Member.repository.entity.Member;
+import member.Member.repository.entity.MemberDTO;
 
 import java.util.List;
 
@@ -16,4 +17,5 @@ public interface MemberService {
     List<String>all_user_list();
 
     boolean update(JoinRequest joinRequest);
+    MemberDTO send_profile(JoinRequest joinRequest);
 }
