@@ -29,8 +29,8 @@ class _WriteState extends State<Write> {
         barrierDismissible: false,
         builder: (BuildContext ctx) {
           return AlertDialog(
-            title: Text('성공'),
-            content: Text('글을 저장하였습니다'),
+            title: Text('글이 성공적으로 작성되었습니다.', style: TextStyle(fontSize: 18),),
+            content: Text(''),
             actions: [
               TextButton(
                 onPressed: () {
@@ -50,8 +50,8 @@ class _WriteState extends State<Write> {
         barrierDismissible: false,
         builder: (BuildContext ctx) {
           return AlertDialog(
-            title: Text("실패"),
-            content: Text("모든 내용을 채워주세요/내용 필드는 10자 이상으로 작성해주세요"),
+            title: Text("입력 되지 않은 정보가 있습니다.", style: TextStyle(fontSize: 18),),
+            content: Text("모든 정보가 입력되어야 하며,\n내용은 10자 이상 작성되어야 합니다."),
             actions: [
               TextButton(
                 onPressed: () {
@@ -288,6 +288,7 @@ class _WriteState extends State<Write> {
                               border: OutlineInputBorder(),
                               labelText: '오픈채팅 주소'),
                         )),
+                    SizedBox(height: 13),
                     ElevatedButton(
                         onPressed: () {
                           write();

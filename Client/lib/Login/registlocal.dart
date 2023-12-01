@@ -83,14 +83,18 @@ class _LocalState extends State<Local> {
       child: Scaffold(
         appBar: AppBar(title: Row(
           children: [
-            Text('지역설정'),
+            Text('지역 설정',
+            style: TextStyle(fontWeight: FontWeight.bold),
+            ),
             Padding(padding:  EdgeInsets.only(right: 20)),
             Text(picked_local,style: TextStyle(color: Colors.grey,fontSize: 10),)
           ],
         ),actions: [
           ElevatedButton(onPressed: () {
             register();
-          }, child: Text('완료'))
+          }, child: Text('완료',
+            style: TextStyle(fontSize: 18),
+          ))
           
         ],),
         body: Row(
@@ -114,7 +118,10 @@ class _LocalState extends State<Local> {
                         decoration: BoxDecoration(
                           border: Border.all(color: Colors.grey),
                         ),
-                        child: Center(child: Text(regions[index])),
+                        child: Center(child: Text(regions[index],
+                          style: TextStyle(
+                              fontSize: 20
+                          ),)),
                       ),
                     );
                   },
@@ -142,7 +149,10 @@ class _LocalState extends State<Local> {
                           : null,
                       // 선택된 항목에 따라 배경 색상 변경
                     ),
-                    child: Center(child: Text(detail_regions[current_index][index])),
+                    child: Center(child: Text(detail_regions[current_index][index],
+                      style: TextStyle(
+                          fontSize: 20
+                      ),)),
                   ),
                 );
               },

@@ -38,20 +38,20 @@ class _InfoState extends State<Info> {
         barrierDismissible: false,
         builder: (BuildContext ctx) {
           return AlertDialog(
-            title: const Text(''),
-            content: Text('회원탈퇴 하시겠습니까?'),
+            title: const Text('MeetMate를 탈퇴하시겠습니까?', style: TextStyle(fontSize: 18),),
+            content: Text('계정은 복구될 수 없으며, \n작성 글과 댓글, 모임 정보는 모두 삭제됩니다.'),
             actions: [
-              TextButton(
-                onPressed: () {
-                  _member_Withdrawal();
-                },
-                child: const Text('네'),
-              ),
               TextButton(
                 onPressed: () {
                   Navigator.of(ctx).pop();
                 },
                 child: const Text('아니오'),
+              ),
+              TextButton(
+                onPressed: () {
+                  _member_Withdrawal();
+                },
+                child: const Text('네'),
               ),
             ],
           );
@@ -63,9 +63,15 @@ class _InfoState extends State<Info> {
         barrierDismissible: false,
         builder: (BuildContext ctx) {
           return AlertDialog(
-            title: const Text(''),
-            content: Text('로그아웃 하시겠습니까?'),
+            title: const Text('로그아웃 하시겠습니까?', style: TextStyle(fontSize: 18),),
+            content: Text(''),
             actions: [
+              TextButton(
+                onPressed: () {
+                  Navigator.of(ctx).pop();
+                },
+                child: const Text('아니오'),
+              ),
               TextButton(
                 onPressed: () {
                   Navigator.push(
@@ -76,12 +82,6 @@ class _InfoState extends State<Info> {
                   );
                 },
                 child: const Text('네'),
-              ),
-              TextButton(
-                onPressed: () {
-                  Navigator.of(ctx).pop();
-                },
-                child: const Text('아니오'),
               ),
             ],
           );
@@ -105,18 +105,21 @@ class _InfoState extends State<Info> {
                   height: 300,
                   margin: EdgeInsets.only(bottom: 20),
                   decoration:
-                      BoxDecoration(color: Color.fromARGB(100, 238, 238, 255)),
+                      BoxDecoration(color: Color.fromARGB(100, 237, 243, 250)),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Image.asset(
-                            'assets/person.jpg',
-                            scale: 3,
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(10.0),
+                            child: Image.asset(
+                              'assets/person.jpg',
+                              scale: 3,
+                            ),
                           ),
-                          Padding(padding: EdgeInsets.only(right: 15)),
+                          // Padding(padding: EdgeInsets.only(right: 15)),
                           Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
@@ -141,7 +144,7 @@ class _InfoState extends State<Info> {
                             builder: (context) => User_mo(),
                           ),
                         );
-                      }, child: Text('회원수정'))
+                      }, child: Text('회원 정보 수정'))
                     ],
                   ),
                 ),
@@ -150,6 +153,7 @@ class _InfoState extends State<Info> {
                       _check_dialog(context);
                     },
                     child: Text('로그아웃')),
+                SizedBox(height: 16),
                 ElevatedButton(onPressed: (){
                   _withdrawal_dialog(context);
                 }, child: Text('회원 탈퇴'))
