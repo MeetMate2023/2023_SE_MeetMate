@@ -31,12 +31,16 @@ class _Search_2State extends State<Search_2> {
               itemBuilder: (BuildContext context, int index) {
                 return GestureDetector(
                   onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => Search(h:detail_hobbys[widget.index][index] ),
-                      ),
-                    );
+                    print('object');
+                    setState(() {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Search(h:detail_hobbys[widget.index][index]),
+                        ),
+                      );
+                    });
+
                     print(detail_hobbys[widget.index][index]);
                   },
                   child: Container(

@@ -1,5 +1,6 @@
 import 'package:app_1/Global/global.dart';
 import 'package:app_1/Page/Util/moditypage.dart';
+import 'package:app_1/Page/Util/viewuserprofile.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 
@@ -164,6 +165,7 @@ class _ViewtextState extends State<Viewtext> with AutomaticKeepAliveClientMixin 
   void Delete_post() {
     final options = {
       "id": widget.dataList[widget.index]['id'],
+      "nickname" : user.User_Nic,
     };
     print(options);
     dio.post("$baseUrl/article/delete", data: options).then(
@@ -204,7 +206,20 @@ class _ViewtextState extends State<Viewtext> with AutomaticKeepAliveClientMixin 
         PopupMenuItem(
           child: Text('프로필보기'),
           onTap: () {
-            print('object');
+            final options = {
+              "nickname" : reviewList[index]['nickname'],
+            };
+            print(options);
+            dio.post("$baseUrl/member/profil  ;e",data: options).then((value){
+              print(value.data);
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) =>
+                      Profile(nickname: value.data['nickname'],hobbys: value.data['hobby'],location: value.data['local'],),
+                ),
+              );
+            });
           },
         ),
         PopupMenuItem(

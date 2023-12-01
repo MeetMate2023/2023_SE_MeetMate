@@ -1,0 +1,159 @@
+-- Merging decision tree log ---
+application
+INJECTED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml:3:5-33:19
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\acslab3\.gradle\caches\transforms-3\11d66f75cca45772e0c63f7f8555a29c\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\acslab3\.gradle\caches\transforms-3\11d66f75cca45772e0c63f7f8555a29c\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.core:core:1.6.0] C:\Users\acslab3\.gradle\caches\transforms-3\6225987ffa1e666bf3cd01f4adeb1e35\transformed\core-1.6.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.6.0] C:\Users\acslab3\.gradle\caches\transforms-3\6225987ffa1e666bf3cd01f4adeb1e35\transformed\core-1.6.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\acslab3\.gradle\caches\transforms-3\b08c7276863eafb0e8a8d79e943b0b57\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\acslab3\.gradle\caches\transforms-3\b08c7276863eafb0e8a8d79e943b0b57\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.6.0] C:\Users\acslab3\.gradle\caches\transforms-3\6225987ffa1e666bf3cd01f4adeb1e35\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
+	android:label
+		ADDED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml:4:9-30
+	android:icon
+		ADDED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml:6:9-43
+	android:name
+		INJECTED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml:5:9-42
+manifest
+ADDED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml:1:1-34:12
+INJECTED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml:1:1-34:12
+INJECTED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml:1:1-34:12
+INJECTED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml:1:1-34:12
+MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\acslab3\.gradle\caches\transforms-3\6313c9ea85cafb7461e7f6eb0583f000\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\acslab3\.gradle\caches\transforms-3\11d66f75cca45772e0c63f7f8555a29c\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\acslab3\.gradle\caches\transforms-3\322f2fe3312ed0e7a3d6acdeff67b38d\transformed\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\acslab3\.gradle\caches\transforms-3\07f6914909b5cf0ca00f5c14d9af7583\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\acslab3\.gradle\caches\transforms-3\b8f160de3dd78201ed900d911352b51c\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\acslab3\.gradle\caches\transforms-3\3df45123b273429b9035971d1605d4f9\transformed\jetified-activity-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\acslab3\.gradle\caches\transforms-3\feae425c4191a6dd7afb9b84d44ed221\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.6.0] C:\Users\acslab3\.gradle\caches\transforms-3\6225987ffa1e666bf3cd01f4adeb1e35\transformed\core-1.6.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\acslab3\.gradle\caches\transforms-3\049fd2c376359fb8bd75ea5aaa94c630\transformed\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\acslab3\.gradle\caches\transforms-3\c110e5f52b22a793ab8afa52b36aa345\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\acslab3\.gradle\caches\transforms-3\02fbf02e26573375a179dfa7fe7a5c62\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\acslab3\.gradle\caches\transforms-3\360df3c27316745f28bca546664b2f28\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\acslab3\.gradle\caches\transforms-3\cb847553a6341631c3bf4c1dc7f5263e\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\acslab3\.gradle\caches\transforms-3\9b1f3d446ed1127a12e3baa75b8cc5e4\transformed\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\acslab3\.gradle\caches\transforms-3\b08c7276863eafb0e8a8d79e943b0b57\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\acslab3\.gradle\caches\transforms-3\7318535e00a6ce2fa64b814f2a8871d5\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\acslab3\.gradle\caches\transforms-3\988057c6371343f7679e1ce708ae5c60\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
+INJECTED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml:1:1-34:12
+INJECTED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml:1:1-34:12
+INJECTED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml:1:1-34:12
+	package
+		INJECTED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml:1:1-34:12
+		INJECTED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml:1:1-34:12
+		INJECTED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml:1:1-34:12
+		INJECTED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml:2:5-67
+	android:name
+		ADDED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml:2:22-64
+uses-sdk
+INJECTED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml
+MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\acslab3\.gradle\caches\transforms-3\6313c9ea85cafb7461e7f6eb0583f000\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\acslab3\.gradle\caches\transforms-3\6313c9ea85cafb7461e7f6eb0583f000\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\acslab3\.gradle\caches\transforms-3\11d66f75cca45772e0c63f7f8555a29c\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\acslab3\.gradle\caches\transforms-3\11d66f75cca45772e0c63f7f8555a29c\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\acslab3\.gradle\caches\transforms-3\322f2fe3312ed0e7a3d6acdeff67b38d\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\acslab3\.gradle\caches\transforms-3\322f2fe3312ed0e7a3d6acdeff67b38d\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\acslab3\.gradle\caches\transforms-3\07f6914909b5cf0ca00f5c14d9af7583\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\acslab3\.gradle\caches\transforms-3\07f6914909b5cf0ca00f5c14d9af7583\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\acslab3\.gradle\caches\transforms-3\b8f160de3dd78201ed900d911352b51c\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\acslab3\.gradle\caches\transforms-3\b8f160de3dd78201ed900d911352b51c\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\acslab3\.gradle\caches\transforms-3\3df45123b273429b9035971d1605d4f9\transformed\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\acslab3\.gradle\caches\transforms-3\3df45123b273429b9035971d1605d4f9\transformed\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\acslab3\.gradle\caches\transforms-3\feae425c4191a6dd7afb9b84d44ed221\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\acslab3\.gradle\caches\transforms-3\feae425c4191a6dd7afb9b84d44ed221\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.6.0] C:\Users\acslab3\.gradle\caches\transforms-3\6225987ffa1e666bf3cd01f4adeb1e35\transformed\core-1.6.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.6.0] C:\Users\acslab3\.gradle\caches\transforms-3\6225987ffa1e666bf3cd01f4adeb1e35\transformed\core-1.6.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\acslab3\.gradle\caches\transforms-3\049fd2c376359fb8bd75ea5aaa94c630\transformed\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\acslab3\.gradle\caches\transforms-3\049fd2c376359fb8bd75ea5aaa94c630\transformed\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\acslab3\.gradle\caches\transforms-3\c110e5f52b22a793ab8afa52b36aa345\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\acslab3\.gradle\caches\transforms-3\c110e5f52b22a793ab8afa52b36aa345\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\acslab3\.gradle\caches\transforms-3\02fbf02e26573375a179dfa7fe7a5c62\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\acslab3\.gradle\caches\transforms-3\02fbf02e26573375a179dfa7fe7a5c62\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\acslab3\.gradle\caches\transforms-3\360df3c27316745f28bca546664b2f28\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\acslab3\.gradle\caches\transforms-3\360df3c27316745f28bca546664b2f28\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\acslab3\.gradle\caches\transforms-3\cb847553a6341631c3bf4c1dc7f5263e\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\acslab3\.gradle\caches\transforms-3\cb847553a6341631c3bf4c1dc7f5263e\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\acslab3\.gradle\caches\transforms-3\9b1f3d446ed1127a12e3baa75b8cc5e4\transformed\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\acslab3\.gradle\caches\transforms-3\9b1f3d446ed1127a12e3baa75b8cc5e4\transformed\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\acslab3\.gradle\caches\transforms-3\b08c7276863eafb0e8a8d79e943b0b57\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\acslab3\.gradle\caches\transforms-3\b08c7276863eafb0e8a8d79e943b0b57\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\acslab3\.gradle\caches\transforms-3\7318535e00a6ce2fa64b814f2a8871d5\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\acslab3\.gradle\caches\transforms-3\7318535e00a6ce2fa64b814f2a8871d5\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\acslab3\.gradle\caches\transforms-3\988057c6371343f7679e1ce708ae5c60\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\acslab3\.gradle\caches\transforms-3\988057c6371343f7679e1ce708ae5c60\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+INJECTED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml
+activity#com.example.app_1.MainActivity
+ADDED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml:7:9-27:20
+	android:launchMode
+		ADDED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml:10:13-43
+	android:hardwareAccelerated
+		ADDED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml:13:13-47
+	android:windowSoftInputMode
+		ADDED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml:14:13-55
+	android:exported
+		ADDED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml:9:13-36
+	android:configChanges
+		ADDED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml:12:13-163
+	android:theme
+		ADDED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml:11:13-47
+	android:name
+		ADDED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml:8:13-41
+meta-data#io.flutter.embedding.android.NormalTheme
+ADDED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml:19:13-22:17
+	android:resource
+		ADDED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml:21:15-52
+	android:name
+		ADDED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml:20:15-70
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml:23:13-26:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml:24:17-68
+	android:name
+		ADDED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml:24:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml:25:17-76
+	android:name
+		ADDED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml:25:27-74
+meta-data#flutterEmbedding
+ADDED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml:30:9-32:33
+	android:value
+		ADDED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml:32:13-30
+	android:name
+		ADDED from C:\Users\acslab3\AndroidStudioProjects\Client\android\app\src\main\AndroidManifest.xml:31:13-44
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\acslab3\.gradle\caches\transforms-3\11d66f75cca45772e0c63f7f8555a29c\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\acslab3\.gradle\caches\transforms-3\11d66f75cca45772e0c63f7f8555a29c\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\acslab3\.gradle\caches\transforms-3\11d66f75cca45772e0c63f7f8555a29c\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\acslab3\.gradle\caches\transforms-3\11d66f75cca45772e0c63f7f8555a29c\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\acslab3\.gradle\caches\transforms-3\11d66f75cca45772e0c63f7f8555a29c\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\acslab3\.gradle\caches\transforms-3\11d66f75cca45772e0c63f7f8555a29c\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51

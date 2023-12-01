@@ -30,6 +30,7 @@ class _Search_1State extends State<Search_1> {
                   return GestureDetector(
                     onTap: () {
                       setState(() {
+
                         Navigator.push(
                           context,
                           MaterialPageRoute(
