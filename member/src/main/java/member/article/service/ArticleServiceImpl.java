@@ -71,7 +71,7 @@ public class ArticleServiceImpl implements ArticleService{
         String chat = uploadRequest.getChat();
         String meetTime = uploadRequest.getMeetTime();
         Optional<Article> existingArticleOptional = articleRepository.findById(id);
-
+        
         if (existingArticleOptional.isPresent()) {
             Article existingArticle = existingArticleOptional.get();
             existingArticle.setTitle(nTitle);
@@ -91,17 +91,10 @@ public class ArticleServiceImpl implements ArticleService{
     @Transactional
     public boolean delete(UploadRequest uploadRequest){
         Long id = uploadRequest.getId();
-        // 기존 게시글을 ID를 기반으로 찾아온다.
-        Optional<Article> existingArticleOptional = articleRepository.findById(id);
         Member nickname = memberRepository.findByNickname(uploadRequest.getNickname());
-        if (existingArticleOptional.isPresent()) {
-            // 게시글이 존재하면 삭제
-            articleRepository.deleteById(id);
-            nickname.setDailyPostCount(nickname.getDailyPostCount()-1);
-            memberRepository.save(nickname);
-            return true;
-        } else {
-            return false;
-        }
+        articleRepository.deleteById(id);
+        nickname.setDailyPostCount(nickname.getDailyPostCount()-1);
+        memberRepository.save(nickname);
+        return true;
     }
 }
