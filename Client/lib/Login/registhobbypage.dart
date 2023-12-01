@@ -17,7 +17,6 @@ class _HobbyState extends State<Hobby> with SingleTickerProviderStateMixin {
   int index = 0;
   int max_select = 3;
   List<bool> selectedHobbies = List.generate(Hobbys.length, (index) => false);
-
   //==> 전부 화면에 취미 리스트 띄우는데 필요한 변수
 
   void add_hobby(String h) {
@@ -165,4 +164,4 @@ class _HobbyState extends State<Hobby> with SingleTickerProviderStateMixin {
       ),
     );
   }
-}
+}}

@@ -81,11 +81,7 @@ public class CommentServiceImpl implements CommentService {
 
     @Override
     public boolean delete(WriteRequest writeRequest) {
-        if (commentRepository.existsById(writeRequest.getId())) {
-            commentRepository.deleteById(writeRequest.getId());
-            return true;
-        } else {
-            return false;
-        }
+        commentRepository.deleteById(writeRequest.getId());
+        return true;
     }
 }

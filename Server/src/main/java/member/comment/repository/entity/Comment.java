@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.*;
 import member.Member.repository.entity.Member;
 import member.article.repository.entity.Article;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 
 @Entity
 @Builder
@@ -17,14 +19,16 @@ public class Comment {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
-    @Column(columnDefinition = "TEXT", nullable = false)
-    String content;
-
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
+    @OnDelete(action = OnDeleteAction.CASCADE)
     @JoinColumn(name = "articleId")
     private Article article;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
+    @OnDelete(action = OnDeleteAction.CASCADE)
     @JoinColumn(name = "nickname", referencedColumnName = "nickname")
     private Member member; // 작성자
+
+    @Column(columnDefinition = "TEXT", nullable = false)
+    String content;
 }

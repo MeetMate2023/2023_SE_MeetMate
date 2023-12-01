@@ -3,8 +3,12 @@ package member.article.repository.entity;
 import jakarta.persistence.*;
 import lombok.*;
 import member.Member.repository.entity.Member;
+import member.invitation.repository.entity.Invitation;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @Builder
@@ -18,19 +22,21 @@ public class Article {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String title;
-    private String content;
-
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     @JoinColumn(name = "nickname", referencedColumnName = "nickname")
+    @OnDelete(action = OnDeleteAction.CASCADE)
     private Member nickname;
+
+    private String title;
+
+    private String content;
 
     private String category;
     private String location;
     private String meetTime;
     private LocalDateTime upload_time;
-
     private String chat;
+
 
 
 }
