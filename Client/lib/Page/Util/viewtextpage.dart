@@ -165,6 +165,7 @@ class _ViewtextState extends State<Viewtext> with AutomaticKeepAliveClientMixin 
   void Delete_post() {
     final options = {
       "id": widget.dataList[widget.index]['id'],
+      "nickname" : user.User_Nic,
     };
     print(options);
     dio.post("$baseUrl/article/delete", data: options).then(
