@@ -71,7 +71,7 @@ public class ArticleServiceImpl implements ArticleService{
         String chat = uploadRequest.getChat();
         String meetTime = uploadRequest.getMeetTime();
         Optional<Article> existingArticleOptional = articleRepository.findById(id);
-        
+
         if (existingArticleOptional.isPresent()) {
             Article existingArticle = existingArticleOptional.get();
             existingArticle.setTitle(nTitle);
