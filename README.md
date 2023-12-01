@@ -7,8 +7,13 @@
 사용자들이 지금까지 알지 못했던 다양한 모임을 발견하고 참여할 수 있는 기회를 제공합니다.
 또한, 이 플랫폼은 사용자들이 공통된 관심사를 가진 다른 사람들과 손쉽게 소통할 수 있는 환경을 조성합니다.
 
-### Prerequisites
-프로젝트는 'Server', 'Client', 'Document' 디렉토리로 구성되어 있으며 'Server', 'Client'에 해당하는 사용법은 각 폴더 안에 있습니다.
+### 
+프로젝트는 'Server', 'Client', 'Documents' 디렉토리로 구성되어 있으며 'Server', 'Client'에 해당하는 사용법은 각 폴더 안에 있습니다.
+
+- [Server](https://github.com/MeetMate2023/2023_SE_MeetMate/blob/f940b9f4ef97f548e4940662b7cb04abf7ff87d8/Server/README.md)
+- [Client](https://github.com/MeetMate2023/2023_SE_MeetMate/blob/f940b9f4ef97f548e4940662b7cb04abf7ff87d8/Client/README.md)
+- [Documents](https://github.com/MeetMate2023/2023_SE_MeetMate/tree/main/Documents)
+
 
 ### Usage
 - 관심 분야를 기준으로 커뮤니티 게시물을 살펴볼 수 있습니다.
