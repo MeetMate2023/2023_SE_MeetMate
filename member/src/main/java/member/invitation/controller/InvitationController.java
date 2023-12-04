@@ -28,4 +28,8 @@ public class InvitationController {
     public boolean permit(@RequestBody InviteRequest inviteRequest){
         return invitationService.permit(inviteRequest);
     }
+
+    @PostMapping("/invitation/All_delete")
+    public boolean all_delete(@RequestBody InviteRequest inviteRequest){return invitationService.All_delete(inviteRequest);}
+
 }

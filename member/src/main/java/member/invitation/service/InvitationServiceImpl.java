@@ -82,5 +82,8 @@ public class InvitationServiceImpl implements InvitationService{
             return false;
         }
     }
-
+    public boolean All_delete(InviteRequest inviteRequest){
+        invitationRepository.deleteByReceiverNickname(inviteRequest.getSender());
+        return true;
+    }
 }
