@@ -10,5 +10,4 @@ import java.util.Optional;
 
 public interface InvitationRepository extends JpaRepository<Invitation,Long> {
     List<Invitation>findByReceiver(Member receiver);
-    void deleteByReceiverNickname(String nickname);
 }
