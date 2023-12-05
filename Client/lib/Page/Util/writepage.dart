@@ -262,6 +262,7 @@ class _WriteState extends State<Write> {
                           decoration: InputDecoration(
                               border: OutlineInputBorder(), labelText: '내용'),
                         )),
+
                     SizedBox(
                         width: MediaQuery.of(context).size.width * 0.75,
                         height: 50,

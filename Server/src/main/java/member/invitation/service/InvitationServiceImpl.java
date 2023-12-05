@@ -13,6 +13,7 @@ import member.invitation.repository.entity.Invitation;
 import member.meeting.repository.MeetingRepository;
 import member.meeting.repository.entity.Meeting;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -60,19 +61,25 @@ public class InvitationServiceImpl implements InvitationService{
         return inviteDTOList;
     }
 
-
     public boolean permit(InviteRequest inviteRequest) {
         Long id = inviteRequest.getId();
         Optional<Invitation> existingInviteOptional = invitationRepository.findById(id);
 
         if (existingInviteOptional.isPresent()) {
             Invitation existingInvite = existingInviteOptional.get();
+
+            // Check if the meeting already exists
+            if (meetingRepository.existsByArticleAndMember(
+                    existingInvite.getArticle(), existingInvite.getReceiver())) {
+                // Meeting already exists, so no need to proceed
+                return false;
+            }
+
             // Meeting 엔티티 생성 및 저장
             Meeting meeting = Meeting.builder()
-
                     .article(existingInvite.getArticle())
                     .member(existingInvite.getReceiver())
-                            .build();
+                    .build();
 
             meetingRepository.save(meeting);
 
@@ -83,4 +90,15 @@ public class InvitationServiceImpl implements InvitationService{
         }
     }
 
+    public boolean All_delete(InviteRequest inviteRequest){
+        Member Receiver = memberRepository.findByNickname(inviteRequest.getReceiver());
+        System.out.println(inviteRequest.getReceiver());
+        List<Invitation> invite = invitationRepository.findByReceiver(Receiver);
+        if(!invite.isEmpty()) {
+            invitationRepository.deleteAll(invite);
+            return true;
+        }
+        else
+            return false;
+    }
 }
