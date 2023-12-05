@@ -19,6 +19,25 @@ class _HobbyState extends State<Hobby> with SingleTickerProviderStateMixin {
   List<bool> selectedHobbies = List.generate(Hobbys.length, (index) => false);
 
   //==> 전부 화면에 취미 리스트 띄우는데 필요한 변수
+  _showDialog(BuildContext context) {
+    showDialog(
+        context: context,
+        barrierDismissible: false,
+        builder: (BuildContext ctx) {
+          return AlertDialog(
+            title: const Text('오류.'),
+            content: const Text('기업회원은 1개이상 선택해주세요.'),
+            actions: [
+              TextButton(
+                onPressed: () {
+                  Navigator.of(ctx).pop();
+                },
+                child: const Text('확인'),
+              ),
+            ],
+          );
+        });
+  }
 
   void add_hobby(String h) {
     setState(() {
@@ -76,10 +95,14 @@ class _HobbyState extends State<Hobby> with SingleTickerProviderStateMixin {
               padding: EdgeInsets.only(right: 16.0),
               child: ElevatedButton(
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => Local()),
-                  );
+                  if(user.User_type&&index ==0){
+                    _showDialog(context);
+                  }else {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Local()),
+                    );
+                  }
                 },
                 style: ElevatedButton.styleFrom(
                   padding: EdgeInsets.symmetric(vertical: 23.0, horizontal: 18),

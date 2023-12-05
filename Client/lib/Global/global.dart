@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:dio/dio.dart';
 
 Dio dio =Dio(); // http통신을 위한 Dio객체 생성
-String baseUrl = "https://fb1e-165-229-86-168.ngrok-free.app"; // 서버 baseUrl
+String baseUrl = "https://bf50-165-229-86-168.ngrok-free.app"; // 서버 baseUrl
 
 class User{ // 유저 정보 저장
   late String User_Local ='';
@@ -17,6 +17,13 @@ class User{ // 유저 정보 저장
   late String User_PassWord='';
   late String User_Nic='';
   late bool User_type;
+  late String joinday ='';
+
+
+
+  void set_day(String d){
+    joinday =d;
+  }
 
   void set_Nic(String N){
     User_Nic =N;
@@ -60,7 +67,9 @@ class User{ // 유저 정보 저장
   bool get_Type(){
     return User_type;
   }
-
+  String get_join(){
+    return joinday;
+  }
 }
 refresh() { // 새로고침시 나오는 알림창
   showDialog(

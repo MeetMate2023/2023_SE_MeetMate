@@ -49,6 +49,14 @@ class _InfoState extends State<Info> {
               ),
               TextButton(
                 onPressed: () {
+                  user.set_day("");
+                  user.set_Type(false);
+                  user.set_Hobby("");
+                  user.set_Name("");
+                  user.set_Local("");
+                  user.set_Nic("");
+                  user.set_PassWord("");
+                  user.set_ID("");
                   _member_Withdrawal();
                 },
                 child: const Text('네'),
@@ -132,6 +140,9 @@ class _InfoState extends State<Info> {
                                 style: TextStyle(color: Colors.grey, fontSize: 10),
                               ),
                               Text(user.User_Hobby),
+                              Text("가입일 : "+user.joinday,
+                                style: TextStyle(color: Colors.grey, fontSize: 10),
+                              ),
                             ],
                           )
                         ],

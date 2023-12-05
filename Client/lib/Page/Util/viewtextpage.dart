@@ -336,9 +336,18 @@ class _ViewtextState extends State<Viewtext> with AutomaticKeepAliveClientMixin 
                                             context,
                                             MaterialPageRoute(
                                               builder: (context) =>
-                                                  Modify(index: widget.index,dataList: widget.dataList),
+                                                  Modify(index: widget.index,
+                                                      dataList: widget
+                                                          .dataList),
                                             ),
                                           );
+                                        });
+                                      }else{
+                                        setState(() {
+                                          comment_text_title = '실패';
+                                          comment_text_content =
+                                          '권한이 없습니다';
+                                          _comment_Dialog(context);
                                         });
                                       }
                                     },
@@ -353,6 +362,13 @@ class _ViewtextState extends State<Viewtext> with AutomaticKeepAliveClientMixin 
                                           user.User_Nic.compareTo("admin") ==
                                               0) {
                                         Delete_post();
+                                      }else{
+                                        setState(() {
+                                          comment_text_title = '실패';
+                                          comment_text_content =
+                                          '권한이 없습니다';
+                                          _comment_Dialog(context);
+                                        });
                                       }
                                     },
                                     child: Text('삭제'),

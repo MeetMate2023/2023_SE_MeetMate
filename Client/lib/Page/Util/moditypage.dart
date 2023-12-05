@@ -59,8 +59,8 @@ class _ModifyState extends State<Modify> {
         barrierDismissible: false,
         builder: (BuildContext ctx) {
           return AlertDialog(
-            title: Text("실패"),
-            content: Text("모든 내용을 채워주세요/내용필드는 10자 이상 작성해주세요"),
+            title: Text("정상적으로 입력 되지 않은 정보가 있습니다.", style: TextStyle(fontSize: 18),),
+            content: Text("모든 정보가 입력되어야 하며,\n내용은 10자 이상 작성되어야 합니다.\n제목은 10자 이하로 작성되어야 합니다."),
             actions: [
               TextButton(
                 onPressed: () {
@@ -72,7 +72,6 @@ class _ModifyState extends State<Modify> {
           );
         });
   }
-
   final detailHobbys = {
     '운동': detail_hobbys[0],
     '아웃도어/여행': detail_hobbys[1],
@@ -110,12 +109,10 @@ class _ModifyState extends State<Modify> {
   }
 
   void write() {
-    if (title_controller.text.isEmpty ||
+    if (title_controller.text.length>10 ||
+        time_controller.text.isEmpty||
         content_controller.text.length<10 ||
         chat_controller.text.isEmpty) {
-      print(title_controller.text);
-      print(content_controller.text);
-      print(chat_controller.text);
       _failDialog(context);
       return;
     }
@@ -226,11 +223,11 @@ class _ModifyState extends State<Modify> {
                       width: MediaQuery.of(context).size.width * 0.75,
                       height: 70,
                       child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text('지역설정  '),
                             SizedBox(
-                              width: MediaQuery.of(context).size.width*0.33,
+                              width: MediaQuery.of(context).size.width*0.30,
                               child: DropdownButton<String>(
                                 value: selectedLocal,
                                 onChanged: (String? newValue) {
