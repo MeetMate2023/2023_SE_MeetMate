@@ -15,7 +15,7 @@ class _ProfileState extends State<Profile> {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-      appBar: AppBar(title: Text('Test')),
+      appBar: AppBar(title: Text('프로필보기')),
       body: Align(
         alignment: Alignment.topCenter,
         child: Container(
@@ -24,7 +24,7 @@ class _ProfileState extends State<Profile> {
           decoration: BoxDecoration(color: Color.fromARGB(100, 237, 243, 250)),
           child: Column(
             children: [
-              Text('User1',style: TextStyle(fontSize: 30),),
+              Text('${widget.nickname}',style: TextStyle(fontSize: 30),),
               Text('위치',style: TextStyle(fontSize: 30)),
               Text('${widget.location}',style: TextStyle(fontSize: 25)),
               Text('취미',style: TextStyle(fontSize: 30)),

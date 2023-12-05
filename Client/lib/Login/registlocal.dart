@@ -15,6 +15,25 @@ class _LocalState extends State<Local> {
   String picked_local = '';
   int max_select = 3;
   String iindex ='';
+  _showDialog(BuildContext context) {
+    showDialog(
+        context: context,
+        barrierDismissible: false,
+        builder: (BuildContext ctx) {
+          return AlertDialog(
+            title: const Text('오류.'),
+            content: const Text('기업회원은 1개이상 선택해주세요.'),
+            actions: [
+              TextButton(
+                onPressed: () {
+                  Navigator.of(ctx).pop();
+                },
+                child: const Text('확인'),
+              ),
+            ],
+          );
+        });
+  }
   void add_local(String h,String i) {
     if(user.User_type){
       setState(() {
@@ -38,44 +57,34 @@ class _LocalState extends State<Local> {
     });
   }
   void register() {
-    if (user.User_ID.isEmpty ||
-        user.User_PassWord.isEmpty ||
-        user.User_Name.isEmpty ||
-        user.User_Nic.isEmpty ||
-        user.User_Hobby.isEmpty ||
-        user.User_Local.isEmpty) {
-      print(user.get_ID());
-      print(user.get_PassWord());
-      print(user.get_Name());
-      print(user.get_Nic());
-      print(user.get_Hobby());
-      print(user.get_Local());
-      return;
+    if (user.User_type&&index ==0) {
+      _showDialog(context);
+    }else {
+      final options = {
+        "uid": user.User_ID,
+        "password": user.User_PassWord,
+        "name": user.User_Name,
+        "nickname": user.User_Nic,
+        "hobby": user.User_Hobby,
+        "local": user.User_Local,
+        "company_check": user.User_type,
+      };
+      print(options);
+      dio
+          .post("$baseUrl/member/join", data: options)
+          .then((result) async => {
+                print(result),
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Login(),
+                  ),
+                ),
+              })
+          .catchError((error) => {
+                print(error),
+              });
     }
-    final options = {
-      "uid": user.User_ID,
-      "password": user.User_PassWord,
-      "name": user.User_Name,
-      "nickname": user.User_Nic,
-      "hobby": user.User_Hobby,
-      "local": user.User_Local,
-      "company_check" : user.User_type,
-    };
-    print(options);
-    dio
-        .post("$baseUrl/member/join", data: options)
-        .then((result) async => {
-      print(result),
-      Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (context) => Login(),
-        ),
-      ),
-    })
-        .catchError((error) => {
-      print(error),
-    });
   }
   @override
   Widget build(BuildContext context) {

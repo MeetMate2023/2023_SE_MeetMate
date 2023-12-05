@@ -50,16 +50,17 @@ class _LoginState extends State<Login> {
         .post("$baseUrl/member/login", data: options)
         .then((result) async => {
               print(result),
-              if (result.data["uid"].isNotEmpty)
+              if (result.data["uid"].toString().compareTo(ID.text)==0)
                 {
         setState(() {
-          user.User_ID = result.data["uid"];
-          user.User_PassWord = result.data["password"];
-          user.User_Nic = result.data["nickname"];
-          user.User_Local = result.data["local"];
-          user.User_Name = result.data["name"];
-          user.User_Hobby = result.data["hobby"];
-          user.User_type = result.data["company_check"];
+          user.set_ID(result.data["uid"]);
+          user.set_PassWord(result.data["password"]);
+          user.set_Nic(result.data["nickname"]) ;
+          user.set_Local(result.data["local"]);
+          user.set_Name(result.data["name"]) ;
+          user.set_Hobby(result.data["hobby"]) ;
+          user.set_Type(result.data["company_check"]);
+          user.set_day(result.data["joinday"].toString().substring(0,10));
         }), // 서버에서 아이디, 비밀번호 검사 후 결과 값으로 사용자의 정보를 반환 -> 반환된 정보를 만들어 둔 User 객체에 저장
                   Navigator.push(
                     context,

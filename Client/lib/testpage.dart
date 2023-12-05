@@ -51,7 +51,7 @@ class _testState extends State<test> {
   void _validateInput() {
     String inputText = _controller.text;
 
-    if (RegExp(r'^\d{2}-\d{2}-\d{2}-\d{2}-\d{2}$').hasMatch(inputText)) {
+    if (RegExp(r'^\d{2}년\d{2}월\d{2}일\d{2}시\d{2}분$').hasMatch(inputText)) {
       setState(() {
         _resultMessage = '$inputText';
       });
@@ -69,7 +69,7 @@ class MyInputFormatter extends TextInputFormatter {
       TextEditingValue oldValue, TextEditingValue newValue) {
     if (newValue.text.length == 10) {
       final String formattedText =
-          '${newValue.text.substring(0, 2)}-${newValue.text.substring(2, 4)}-${newValue.text.substring(4,6)}-${newValue.text.substring(6,8)}-${newValue.text.substring(8,10)}';
+          '${newValue.text.substring(0, 2)}년${newValue.text.substring(2, 4)}월${newValue.text.substring(4,6)}일${newValue.text.substring(6,8)}시${newValue.text.substring(8,10)}분';
       return TextEditingValue(
         text: formattedText,
         selection: TextSelection.collapsed(offset: formattedText.length),
