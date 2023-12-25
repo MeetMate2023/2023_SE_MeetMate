@@ -117,7 +117,7 @@
 -dontnote java.lang.invoke.**
 
 # End of content from C:\Users\jmk10\StudioProjects\Client\build\app\intermediates\default_proguard_files\global\proguard-android.txt-7.3.0
-# The proguard configuration file for the following section is C:\Users\jmk10\Desktop\9\flutter\packages\flutter_tools\gradle\flutter_proguard_rules.pro
+# The proguard configuration file for the following section is C:\Users\jmk10\Desktop\flutter\packages\flutter_tools\gradle\flutter_proguard_rules.pro
 # Build the ephemeral app in a module project.
 # Prevents: Warning: library class <plugin-package> depends on program class io.flutter.plugin.**
 # This is due to plugins (libraries) depending on the embedding (the program jar)
@@ -126,7 +126,7 @@
 # The android.** package is provided by the OS at runtime.
 -dontwarn android.**
 
-# End of content from C:\Users\jmk10\Desktop\9\flutter\packages\flutter_tools\gradle\flutter_proguard_rules.pro
+# End of content from C:\Users\jmk10\Desktop\flutter\packages\flutter_tools\gradle\flutter_proguard_rules.pro
 # The proguard configuration file for the following section is C:\Users\jmk10\StudioProjects\Client\build\app\intermediates\aapt_proguard_file\release\aapt_rules.txt
 -keep class android.app.Application { <init>(); }
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }

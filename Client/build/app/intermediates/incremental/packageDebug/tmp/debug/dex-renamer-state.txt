@@ -1,4 +1,4 @@
-#Tue Dec 05 16:45:46 KST 2023
+#Mon Dec 25 14:45:33 KST 2023
 base.0=C\:\\Users\\jmk10\\StudioProjects\\Client\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
